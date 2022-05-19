@@ -82,16 +82,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Exhibit.cpp">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Exhibit.h">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Picture.cpp">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Picture.h">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Room.cpp">
+			<Option target="museum"/>
+		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/Room.h">
 			<Option target="museum"/>
 		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/VoluminousExhibit.cpp">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/VoluminousExhibit.h">
+			<Option target="museum"/>
+		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/main.cpp">
-			<Option target="museum"/>
-		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/room.cpp">
-			<Option target="museum"/>
-		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/room.h">
 			<Option target="museum"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/CMakeLists.txt">

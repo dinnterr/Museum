@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/museum.dir/Exhibit.cpp.obj"
+  "CMakeFiles/museum.dir/Picture.cpp.obj"
+  "CMakeFiles/museum.dir/Room.cpp.obj"
+  "CMakeFiles/museum.dir/VoluminousExhibit.cpp.obj"
   "CMakeFiles/museum.dir/main.cpp.obj"
-  "CMakeFiles/museum.dir/room.cpp.obj"
   "museum.exe"
   "museum.exe.manifest"
   "museum.lib"

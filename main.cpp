@@ -1,15 +1,9 @@
 #include <iostream>
 #include <string>
 #include "Room.h"
-
-/*class Exhibit{
-private:
-    std::string author;
-    std::string country;
-    int year;
-public:
-
-};*/
+#include "Exhibit.h"
+#include "Picture.h"
+#include "VoluminousExhibit.h"
 
 int main() {
     std::cout <<"Input room width, length, height and usable wall area:" <<std::endl;
@@ -22,10 +16,16 @@ int main() {
                   <<room.getWidth() << '*' << room.getLength() << '*'
                   <<room.getHeight() << " with " << room.getUsableWallArea()
                   << " usable wall area." << std::endl;
+
+
+
+
+
+
     }
     catch (const std::exception& ex)
     {
-        std::cout <<"Cannot create a room!" <<std::endl;
+        std::cout << ex.what() <<std::endl;
     }
 
     return 0;

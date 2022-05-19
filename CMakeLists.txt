@@ -3,4 +3,4 @@ project(museum)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(museum main.cpp Room.h room.cpp)
+add_executable(museum main.cpp Room.cpp Room.h Exhibit.cpp Exhibit.h Picture.cpp Picture.h VoluminousExhibit.cpp VoluminousExhibit.h)
