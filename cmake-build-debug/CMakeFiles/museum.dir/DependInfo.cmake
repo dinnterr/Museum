@@ -9,7 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/User/CLionProjects/museum/Exhibit.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Exhibit.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/HouseholdItem.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/HouseholdItem.cpp.obj"
   "C:/Users/User/CLionProjects/museum/Picture.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Picture.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Sculpture.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Sculpture.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Technics.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Technics.cpp.obj"
   "C:/Users/User/CLionProjects/museum/VoluminousExhibit.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/VoluminousExhibit.cpp.obj"
   "C:/Users/User/CLionProjects/museum/main.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/main.cpp.obj"
   "C:/Users/User/CLionProjects/museum/Room.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/room.cpp.obj"

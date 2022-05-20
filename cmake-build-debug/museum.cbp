@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/User/CLionProjects/museum/Exhibit.h">
 			<Option target="museum"/>
 		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/HouseholdItem.cpp">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/HouseholdItem.h">
+			<Option target="museum"/>
+		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/Picture.cpp">
 			<Option target="museum"/>
 		</Unit>
@@ -98,6 +104,18 @@
 			<Option target="museum"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/Room.h">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Sculpture.cpp">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Sculpture.h">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Technics.cpp">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Technics.h">
 			<Option target="museum"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/VoluminousExhibit.cpp">
