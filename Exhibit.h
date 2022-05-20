@@ -4,6 +4,8 @@
 #include <iostream>
 #include <exception>
 #include <stdexcept>
+#include <sstream>
+#include <string>
 
 class Exhibit{
 public:
@@ -16,6 +18,8 @@ public:
     void setAuthor (std::string author){m_author = author;}
     void setCountry (std::string country){m_country = country;}
     void setYear (int year){m_year = year;}
+
+    std::string Info() const;
 
 private:
     std::string m_author = "Unknown";

@@ -8,3 +8,12 @@ Exhibit::Exhibit(std::string author, std::string country, int year){
     m_country = country;
     m_year = year;
 }
+
+std::string Exhibit::Info() const{
+    std::stringstream ss;
+
+    ss << "You have created an exhibit of museum."
+       << "\nAuthor: "<< m_author << ". " << "Country: " << m_country << '.'
+       << "\nYear: " << m_year << '.';
+    return ss.str();
+}
