@@ -9,7 +9,7 @@
 
 class Exhibit{
 public:
-    Exhibit(std::string author, std::string country, int year);
+    Exhibit(std::string country, int year, std::string author);
 
     std::string getAuthor () const {return m_author;}
     std::string getCountry () const {return m_country;}
@@ -19,7 +19,7 @@ public:
     void setCountry (std::string country){m_country = country;}
     void setYear (int year){m_year = year;}
 
-    std::string Info() const;
+    virtual std::string Info() const;
 
 private:
     std::string m_author = "Unknown";

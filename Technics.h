@@ -5,7 +5,9 @@
 
 class Technics : public  VoluminousExhibit{
 public:
-    Technics(std::string author, std::string country, int year, double width, double length, double height);
+    Technics(std::string country, int year, std::string author, double width, double length, double height);
+
+    std::string Info() const override;
 };
 
 #endif //TECHNICS_H
