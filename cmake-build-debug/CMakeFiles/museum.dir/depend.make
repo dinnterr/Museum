@@ -28,8 +28,11 @@ CMakeFiles\museum.dir\VoluminousExhibit.cpp.obj: ..\VoluminousExhibit.cpp
 CMakeFiles\museum.dir\VoluminousExhibit.cpp.obj: ..\VoluminousExhibit.h
 
 CMakeFiles\museum.dir\main.cpp.obj: ..\Exhibit.h
+CMakeFiles\museum.dir\main.cpp.obj: ..\HouseholdItem.h
 CMakeFiles\museum.dir\main.cpp.obj: ..\Picture.h
 CMakeFiles\museum.dir\main.cpp.obj: ..\Room.h
+CMakeFiles\museum.dir\main.cpp.obj: ..\Sculpture.h
+CMakeFiles\museum.dir\main.cpp.obj: ..\Technics.h
 CMakeFiles\museum.dir\main.cpp.obj: ..\VoluminousExhibit.h
 CMakeFiles\museum.dir\main.cpp.obj: ..\main.cpp
 

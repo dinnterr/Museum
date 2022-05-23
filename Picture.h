@@ -5,7 +5,8 @@
 
 class Picture : public Exhibit {
 public:
-    Picture (std::string country, int year, double width, double height, std::string author);
+    Picture (std::string author, std::string country, int year, double width, double heigh);
+    Picture (std::string country, int year, double width, double heigh);
 
     double getWidth () const {return m_width;}
     double getHeigth () const {return  m_height;}

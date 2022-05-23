@@ -9,7 +9,8 @@
 
 class Exhibit{
 public:
-    Exhibit(std::string country, int year, std::string author);
+    Exhibit(std::string author, std::string country, int year);
+    Exhibit(std::string country, int year);
 
     std::string getAuthor () const {return m_author;}
     std::string getCountry () const {return m_country;}

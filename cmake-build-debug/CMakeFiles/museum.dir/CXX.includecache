@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User/CLionProjects/museum/Exhibit.cpp
-Exhibit.h
-C:/Users/User/CLionProjects/museum/Exhibit.h
-
 C:/Users/User/CLionProjects/museum/Exhibit.h
 iostream
 -
@@ -37,10 +33,6 @@ C:/Users/User/CLionProjects/museum/Picture.h
 C:/Users/User/CLionProjects/museum/Picture.h
 Exhibit.h
 C:/Users/User/CLionProjects/museum/Exhibit.h
-
-C:/Users/User/CLionProjects/museum/Room.cpp
-Room.h
-C:/Users/User/CLionProjects/museum/Room.h
 
 C:/Users/User/CLionProjects/museum/Room.h
 iostream
@@ -91,4 +83,10 @@ Picture.h
 C:/Users/User/CLionProjects/museum/Picture.h
 VoluminousExhibit.h
 C:/Users/User/CLionProjects/museum/VoluminousExhibit.h
+Sculpture.h
+C:/Users/User/CLionProjects/museum/Sculpture.h
+Technics.h
+C:/Users/User/CLionProjects/museum/Technics.h
+HouseholdItem.h
+C:/Users/User/CLionProjects/museum/HouseholdItem.h
 

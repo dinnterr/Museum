@@ -12,7 +12,7 @@ int main() {
 
     try
     {
-        Picture p ("UK", 1345, 35, 45);
+
 
     }
     catch (const std::exception& ex)

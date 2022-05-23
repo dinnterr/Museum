@@ -29,8 +29,11 @@ CMakeFiles/museum.dir/VoluminousExhibit.cpp.obj
  C:/Users/User/CLionProjects/museum/VoluminousExhibit.h
 CMakeFiles/museum.dir/main.cpp.obj
  C:/Users/User/CLionProjects/museum/Exhibit.h
+ C:/Users/User/CLionProjects/museum/HouseholdItem.h
  C:/Users/User/CLionProjects/museum/Picture.h
  C:/Users/User/CLionProjects/museum/Room.h
+ C:/Users/User/CLionProjects/museum/Sculpture.h
+ C:/Users/User/CLionProjects/museum/Technics.h
  C:/Users/User/CLionProjects/museum/VoluminousExhibit.h
  C:/Users/User/CLionProjects/museum/main.cpp
 CMakeFiles/museum.dir/room.cpp.obj

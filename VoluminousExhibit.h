@@ -5,7 +5,8 @@
 
 class VoluminousExhibit : public Exhibit{
 public:
-    VoluminousExhibit(std::string country, int year, std::string author, double width, double length, double height);
+    VoluminousExhibit(std::string author, std::string country, int year, double width, double length, double height);
+    VoluminousExhibit(std::string country, int year, double width, double length, double height);
 
     double getWidth () const {return m_width;}
     double  getLength () const {return m_length;}
