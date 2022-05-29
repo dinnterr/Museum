@@ -118,197 +118,221 @@ museum\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\build
 .PHONY : museum\fast
 
-Exhibit.obj: Exhibit.cpp.obj
-.PHONY : Exhibit.obj
+Museum\Exhibit.obj: Museum\Exhibit.cpp.obj
+.PHONY : Museum\Exhibit.obj
 
 # target to build an object file
-Exhibit.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Exhibit.cpp.obj
-.PHONY : Exhibit.cpp.obj
+Museum\Exhibit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Exhibit.cpp.obj
+.PHONY : Museum\Exhibit.cpp.obj
 
-Exhibit.i: Exhibit.cpp.i
-.PHONY : Exhibit.i
+Museum\Exhibit.i: Museum\Exhibit.cpp.i
+.PHONY : Museum\Exhibit.i
 
 # target to preprocess a source file
-Exhibit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Exhibit.cpp.i
-.PHONY : Exhibit.cpp.i
+Museum\Exhibit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Exhibit.cpp.i
+.PHONY : Museum\Exhibit.cpp.i
 
-Exhibit.s: Exhibit.cpp.s
-.PHONY : Exhibit.s
+Museum\Exhibit.s: Museum\Exhibit.cpp.s
+.PHONY : Museum\Exhibit.s
 
 # target to generate assembly for a file
-Exhibit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Exhibit.cpp.s
-.PHONY : Exhibit.cpp.s
+Museum\Exhibit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Exhibit.cpp.s
+.PHONY : Museum\Exhibit.cpp.s
 
-HouseholdItem.obj: HouseholdItem.cpp.obj
-.PHONY : HouseholdItem.obj
+Museum\HouseholdItem.obj: Museum\HouseholdItem.cpp.obj
+.PHONY : Museum\HouseholdItem.obj
 
 # target to build an object file
-HouseholdItem.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\HouseholdItem.cpp.obj
-.PHONY : HouseholdItem.cpp.obj
+Museum\HouseholdItem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.obj
+.PHONY : Museum\HouseholdItem.cpp.obj
 
-HouseholdItem.i: HouseholdItem.cpp.i
-.PHONY : HouseholdItem.i
+Museum\HouseholdItem.i: Museum\HouseholdItem.cpp.i
+.PHONY : Museum\HouseholdItem.i
 
 # target to preprocess a source file
-HouseholdItem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\HouseholdItem.cpp.i
-.PHONY : HouseholdItem.cpp.i
+Museum\HouseholdItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.i
+.PHONY : Museum\HouseholdItem.cpp.i
 
-HouseholdItem.s: HouseholdItem.cpp.s
-.PHONY : HouseholdItem.s
+Museum\HouseholdItem.s: Museum\HouseholdItem.cpp.s
+.PHONY : Museum\HouseholdItem.s
 
 # target to generate assembly for a file
-HouseholdItem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\HouseholdItem.cpp.s
-.PHONY : HouseholdItem.cpp.s
+Museum\HouseholdItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.s
+.PHONY : Museum\HouseholdItem.cpp.s
 
-Picture.obj: Picture.cpp.obj
-.PHONY : Picture.obj
+Museum\Picture.obj: Museum\Picture.cpp.obj
+.PHONY : Museum\Picture.obj
 
 # target to build an object file
-Picture.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Picture.cpp.obj
-.PHONY : Picture.cpp.obj
+Museum\Picture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Picture.cpp.obj
+.PHONY : Museum\Picture.cpp.obj
 
-Picture.i: Picture.cpp.i
-.PHONY : Picture.i
+Museum\Picture.i: Museum\Picture.cpp.i
+.PHONY : Museum\Picture.i
 
 # target to preprocess a source file
-Picture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Picture.cpp.i
-.PHONY : Picture.cpp.i
+Museum\Picture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Picture.cpp.i
+.PHONY : Museum\Picture.cpp.i
 
-Picture.s: Picture.cpp.s
-.PHONY : Picture.s
+Museum\Picture.s: Museum\Picture.cpp.s
+.PHONY : Museum\Picture.s
 
 # target to generate assembly for a file
-Picture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Picture.cpp.s
-.PHONY : Picture.cpp.s
+Museum\Picture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Picture.cpp.s
+.PHONY : Museum\Picture.cpp.s
 
-Room.obj: Room.cpp.obj
-.PHONY : Room.obj
+Museum\Room.obj: Museum\Room.cpp.obj
+.PHONY : Museum\Room.obj
 
 # target to build an object file
-Room.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Room.cpp.obj
-.PHONY : Room.cpp.obj
+Museum\Room.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Room.cpp.obj
+.PHONY : Museum\Room.cpp.obj
 
-Room.i: Room.cpp.i
-.PHONY : Room.i
+Museum\Room.i: Museum\Room.cpp.i
+.PHONY : Museum\Room.i
 
 # target to preprocess a source file
-Room.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Room.cpp.i
-.PHONY : Room.cpp.i
+Museum\Room.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Room.cpp.i
+.PHONY : Museum\Room.cpp.i
 
-Room.s: Room.cpp.s
-.PHONY : Room.s
+Museum\Room.s: Museum\Room.cpp.s
+.PHONY : Museum\Room.s
 
 # target to generate assembly for a file
-Room.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Room.cpp.s
-.PHONY : Room.cpp.s
+Museum\Room.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Room.cpp.s
+.PHONY : Museum\Room.cpp.s
 
-Sculpture.obj: Sculpture.cpp.obj
-.PHONY : Sculpture.obj
+Museum\Sculpture.obj: Museum\Sculpture.cpp.obj
+.PHONY : Museum\Sculpture.obj
 
 # target to build an object file
-Sculpture.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Sculpture.cpp.obj
-.PHONY : Sculpture.cpp.obj
+Museum\Sculpture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Sculpture.cpp.obj
+.PHONY : Museum\Sculpture.cpp.obj
 
-Sculpture.i: Sculpture.cpp.i
-.PHONY : Sculpture.i
+Museum\Sculpture.i: Museum\Sculpture.cpp.i
+.PHONY : Museum\Sculpture.i
 
 # target to preprocess a source file
-Sculpture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Sculpture.cpp.i
-.PHONY : Sculpture.cpp.i
+Museum\Sculpture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Sculpture.cpp.i
+.PHONY : Museum\Sculpture.cpp.i
 
-Sculpture.s: Sculpture.cpp.s
-.PHONY : Sculpture.s
+Museum\Sculpture.s: Museum\Sculpture.cpp.s
+.PHONY : Museum\Sculpture.s
 
 # target to generate assembly for a file
-Sculpture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Sculpture.cpp.s
-.PHONY : Sculpture.cpp.s
+Museum\Sculpture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Sculpture.cpp.s
+.PHONY : Museum\Sculpture.cpp.s
 
-Technics.obj: Technics.cpp.obj
-.PHONY : Technics.obj
+Museum\Technics.obj: Museum\Technics.cpp.obj
+.PHONY : Museum\Technics.obj
 
 # target to build an object file
-Technics.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Technics.cpp.obj
-.PHONY : Technics.cpp.obj
+Museum\Technics.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Technics.cpp.obj
+.PHONY : Museum\Technics.cpp.obj
 
-Technics.i: Technics.cpp.i
-.PHONY : Technics.i
+Museum\Technics.i: Museum\Technics.cpp.i
+.PHONY : Museum\Technics.i
 
 # target to preprocess a source file
-Technics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Technics.cpp.i
-.PHONY : Technics.cpp.i
+Museum\Technics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Technics.cpp.i
+.PHONY : Museum\Technics.cpp.i
 
-Technics.s: Technics.cpp.s
-.PHONY : Technics.s
+Museum\Technics.s: Museum\Technics.cpp.s
+.PHONY : Museum\Technics.s
 
 # target to generate assembly for a file
-Technics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Technics.cpp.s
-.PHONY : Technics.cpp.s
+Museum\Technics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Technics.cpp.s
+.PHONY : Museum\Technics.cpp.s
 
-VoluminousExhibit.obj: VoluminousExhibit.cpp.obj
-.PHONY : VoluminousExhibit.obj
+Museum\VoluminousExhibit.obj: Museum\VoluminousExhibit.cpp.obj
+.PHONY : Museum\VoluminousExhibit.obj
 
 # target to build an object file
-VoluminousExhibit.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\VoluminousExhibit.cpp.obj
-.PHONY : VoluminousExhibit.cpp.obj
+Museum\VoluminousExhibit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.obj
+.PHONY : Museum\VoluminousExhibit.cpp.obj
 
-VoluminousExhibit.i: VoluminousExhibit.cpp.i
-.PHONY : VoluminousExhibit.i
+Museum\VoluminousExhibit.i: Museum\VoluminousExhibit.cpp.i
+.PHONY : Museum\VoluminousExhibit.i
 
 # target to preprocess a source file
-VoluminousExhibit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\VoluminousExhibit.cpp.i
-.PHONY : VoluminousExhibit.cpp.i
+Museum\VoluminousExhibit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.i
+.PHONY : Museum\VoluminousExhibit.cpp.i
 
-VoluminousExhibit.s: VoluminousExhibit.cpp.s
-.PHONY : VoluminousExhibit.s
+Museum\VoluminousExhibit.s: Museum\VoluminousExhibit.cpp.s
+.PHONY : Museum\VoluminousExhibit.s
 
 # target to generate assembly for a file
-VoluminousExhibit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\VoluminousExhibit.cpp.s
-.PHONY : VoluminousExhibit.cpp.s
+Museum\VoluminousExhibit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.s
+.PHONY : Museum\VoluminousExhibit.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+Museum\Windows.obj: Museum\Windows.cpp.obj
+.PHONY : Museum\Windows.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+Museum\Windows.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Windows.cpp.obj
+.PHONY : Museum\Windows.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+Museum\Windows.i: Museum\Windows.cpp.i
+.PHONY : Museum\Windows.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\main.cpp.i
-.PHONY : main.cpp.i
+Museum\Windows.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Windows.cpp.i
+.PHONY : Museum\Windows.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+Museum\Windows.s: Museum\Windows.cpp.s
+.PHONY : Museum\Windows.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\main.cpp.s
-.PHONY : main.cpp.s
+Museum\Windows.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Windows.cpp.s
+.PHONY : Museum\Windows.cpp.s
+
+Museum\main.obj: Museum\main.cpp.obj
+.PHONY : Museum\main.obj
+
+# target to build an object file
+Museum\main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\main.cpp.obj
+.PHONY : Museum\main.cpp.obj
+
+Museum\main.i: Museum\main.cpp.i
+.PHONY : Museum\main.i
+
+# target to preprocess a source file
+Museum\main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\main.cpp.i
+.PHONY : Museum\main.cpp.i
+
+Museum\main.s: Museum\main.cpp.s
+.PHONY : Museum\main.s
+
+# target to generate assembly for a file
+Museum\main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\main.cpp.s
+.PHONY : Museum\main.cpp.s
 
 # Help Target
 help:
@@ -319,30 +343,33 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... museum
-	@echo ... Exhibit.obj
-	@echo ... Exhibit.i
-	@echo ... Exhibit.s
-	@echo ... HouseholdItem.obj
-	@echo ... HouseholdItem.i
-	@echo ... HouseholdItem.s
-	@echo ... Picture.obj
-	@echo ... Picture.i
-	@echo ... Picture.s
-	@echo ... Room.obj
-	@echo ... Room.i
-	@echo ... Room.s
-	@echo ... Sculpture.obj
-	@echo ... Sculpture.i
-	@echo ... Sculpture.s
-	@echo ... Technics.obj
-	@echo ... Technics.i
-	@echo ... Technics.s
-	@echo ... VoluminousExhibit.obj
-	@echo ... VoluminousExhibit.i
-	@echo ... VoluminousExhibit.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Museum/Exhibit.obj
+	@echo ... Museum/Exhibit.i
+	@echo ... Museum/Exhibit.s
+	@echo ... Museum/HouseholdItem.obj
+	@echo ... Museum/HouseholdItem.i
+	@echo ... Museum/HouseholdItem.s
+	@echo ... Museum/Picture.obj
+	@echo ... Museum/Picture.i
+	@echo ... Museum/Picture.s
+	@echo ... Museum/Room.obj
+	@echo ... Museum/Room.i
+	@echo ... Museum/Room.s
+	@echo ... Museum/Sculpture.obj
+	@echo ... Museum/Sculpture.i
+	@echo ... Museum/Sculpture.s
+	@echo ... Museum/Technics.obj
+	@echo ... Museum/Technics.i
+	@echo ... Museum/Technics.s
+	@echo ... Museum/VoluminousExhibit.obj
+	@echo ... Museum/VoluminousExhibit.i
+	@echo ... Museum/VoluminousExhibit.s
+	@echo ... Museum/Windows.obj
+	@echo ... Museum/Windows.i
+	@echo ... Museum/Windows.s
+	@echo ... Museum/main.obj
+	@echo ... Museum/main.i
+	@echo ... Museum/main.s
 .PHONY : help
 
 

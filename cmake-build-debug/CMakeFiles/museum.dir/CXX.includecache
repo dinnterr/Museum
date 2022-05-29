@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User/CLionProjects/museum/Exhibit.h
+C:/Users/User/CLionProjects/museum/Museum/Exhibit.cpp
+Exhibit.h
+C:/Users/User/CLionProjects/museum/Museum/Exhibit.h
+
+C:/Users/User/CLionProjects/museum/Museum/Exhibit.h
 iostream
 -
 exception
@@ -18,23 +22,27 @@ sstream
 string
 -
 
-C:/Users/User/CLionProjects/museum/HouseholdItem.cpp
+C:/Users/User/CLionProjects/museum/Museum/HouseholdItem.cpp
 HouseholdItem.h
-C:/Users/User/CLionProjects/museum/HouseholdItem.h
+C:/Users/User/CLionProjects/museum/Museum/HouseholdItem.h
 
-C:/Users/User/CLionProjects/museum/HouseholdItem.h
+C:/Users/User/CLionProjects/museum/Museum/HouseholdItem.h
 VoluminousExhibit.h
-C:/Users/User/CLionProjects/museum/VoluminousExhibit.h
+C:/Users/User/CLionProjects/museum/Museum/VoluminousExhibit.h
 
-C:/Users/User/CLionProjects/museum/Picture.cpp
+C:/Users/User/CLionProjects/museum/Museum/Picture.cpp
 Picture.h
-C:/Users/User/CLionProjects/museum/Picture.h
+C:/Users/User/CLionProjects/museum/Museum/Picture.h
 
-C:/Users/User/CLionProjects/museum/Picture.h
+C:/Users/User/CLionProjects/museum/Museum/Picture.h
 Exhibit.h
-C:/Users/User/CLionProjects/museum/Exhibit.h
+C:/Users/User/CLionProjects/museum/Museum/Exhibit.h
 
-C:/Users/User/CLionProjects/museum/Room.h
+C:/Users/User/CLionProjects/museum/Museum/Room.cpp
+Room.h
+C:/Users/User/CLionProjects/museum/Museum/Room.h
+
+C:/Users/User/CLionProjects/museum/Museum/Room.h
 iostream
 -
 exception
@@ -45,48 +53,72 @@ sstream
 -
 string
 -
+vector
+-
+Windows.h
+C:/Users/User/CLionProjects/museum/Museum/Windows.h
 
-C:/Users/User/CLionProjects/museum/Sculpture.cpp
+C:/Users/User/CLionProjects/museum/Museum/Sculpture.cpp
 Sculpture.h
-C:/Users/User/CLionProjects/museum/Sculpture.h
+C:/Users/User/CLionProjects/museum/Museum/Sculpture.h
 
-C:/Users/User/CLionProjects/museum/Sculpture.h
+C:/Users/User/CLionProjects/museum/Museum/Sculpture.h
 VoluminousExhibit.h
-C:/Users/User/CLionProjects/museum/VoluminousExhibit.h
+C:/Users/User/CLionProjects/museum/Museum/VoluminousExhibit.h
 
-C:/Users/User/CLionProjects/museum/Technics.cpp
+C:/Users/User/CLionProjects/museum/Museum/Technics.cpp
 Technics.h
-C:/Users/User/CLionProjects/museum/Technics.h
+C:/Users/User/CLionProjects/museum/Museum/Technics.h
 
-C:/Users/User/CLionProjects/museum/Technics.h
+C:/Users/User/CLionProjects/museum/Museum/Technics.h
 VoluminousExhibit.h
-C:/Users/User/CLionProjects/museum/VoluminousExhibit.h
+C:/Users/User/CLionProjects/museum/Museum/VoluminousExhibit.h
 
-C:/Users/User/CLionProjects/museum/VoluminousExhibit.cpp
+C:/Users/User/CLionProjects/museum/Museum/VoluminousExhibit.cpp
 VoluminousExhibit.h
-C:/Users/User/CLionProjects/museum/VoluminousExhibit.h
+C:/Users/User/CLionProjects/museum/Museum/VoluminousExhibit.h
 
-C:/Users/User/CLionProjects/museum/VoluminousExhibit.h
+C:/Users/User/CLionProjects/museum/Museum/VoluminousExhibit.h
 Exhibit.h
-C:/Users/User/CLionProjects/museum/Exhibit.h
+C:/Users/User/CLionProjects/museum/Museum/Exhibit.h
 
-C:/Users/User/CLionProjects/museum/main.cpp
+C:/Users/User/CLionProjects/museum/Museum/Windows.cpp
+Windows.h
+C:/Users/User/CLionProjects/museum/Museum/Windows.h
+
+C:/Users/User/CLionProjects/museum/Museum/Windows.h
+iostream
+-
+exception
+-
+stdexcept
+-
+sstream
+-
+string
+-
+utility
+-
+vector
+-
+
+C:/Users/User/CLionProjects/museum/Museum/main.cpp
 iostream
 -
 string
 -
 Room.h
-C:/Users/User/CLionProjects/museum/Room.h
+C:/Users/User/CLionProjects/museum/Museum/Room.h
 Exhibit.h
-C:/Users/User/CLionProjects/museum/Exhibit.h
+C:/Users/User/CLionProjects/museum/Museum/Exhibit.h
 Picture.h
-C:/Users/User/CLionProjects/museum/Picture.h
+C:/Users/User/CLionProjects/museum/Museum/Picture.h
 VoluminousExhibit.h
-C:/Users/User/CLionProjects/museum/VoluminousExhibit.h
+C:/Users/User/CLionProjects/museum/Museum/VoluminousExhibit.h
 Sculpture.h
-C:/Users/User/CLionProjects/museum/Sculpture.h
+C:/Users/User/CLionProjects/museum/Museum/Sculpture.h
 Technics.h
-C:/Users/User/CLionProjects/museum/Technics.h
+C:/Users/User/CLionProjects/museum/Museum/Technics.h
 HouseholdItem.h
-C:/Users/User/CLionProjects/museum/HouseholdItem.h
+C:/Users/User/CLionProjects/museum/Museum/HouseholdItem.h
 

@@ -8,14 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/User/CLionProjects/museum/Exhibit.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Exhibit.cpp.obj"
-  "C:/Users/User/CLionProjects/museum/HouseholdItem.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/HouseholdItem.cpp.obj"
-  "C:/Users/User/CLionProjects/museum/Picture.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Picture.cpp.obj"
-  "C:/Users/User/CLionProjects/museum/Sculpture.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Sculpture.cpp.obj"
-  "C:/Users/User/CLionProjects/museum/Technics.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Technics.cpp.obj"
-  "C:/Users/User/CLionProjects/museum/VoluminousExhibit.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/VoluminousExhibit.cpp.obj"
-  "C:/Users/User/CLionProjects/museum/main.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/main.cpp.obj"
-  "C:/Users/User/CLionProjects/museum/Room.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/room.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Museum/Exhibit.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/Exhibit.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Museum/HouseholdItem.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/HouseholdItem.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Museum/Picture.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/Picture.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Museum/Room.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/Room.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Museum/Sculpture.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/Sculpture.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Museum/Technics.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/Technics.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Museum/VoluminousExhibit.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/VoluminousExhibit.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Museum/Windows.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/Windows.cpp.obj"
+  "C:/Users/User/CLionProjects/museum/Museum/main.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
