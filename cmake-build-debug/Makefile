@@ -262,53 +262,53 @@ Museum\Exhibits\VoluminousExhibit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Exhibits\VoluminousExhibit.cpp.s
 .PHONY : Museum\Exhibits\VoluminousExhibit.cpp.s
 
-Museum\Rooms\Doorway.obj: Museum\Rooms\Doorway.cpp.obj
-.PHONY : Museum\Rooms\Doorway.obj
+Museum\Rooms\Openings\Doorway.obj: Museum\Rooms\Openings\Doorway.cpp.obj
+.PHONY : Museum\Rooms\Openings\Doorway.obj
 
 # target to build an object file
-Museum\Rooms\Doorway.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.obj
-.PHONY : Museum\Rooms\Doorway.cpp.obj
+Museum\Rooms\Openings\Doorway.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Openings\Doorway.cpp.obj
+.PHONY : Museum\Rooms\Openings\Doorway.cpp.obj
 
-Museum\Rooms\Doorway.i: Museum\Rooms\Doorway.cpp.i
-.PHONY : Museum\Rooms\Doorway.i
+Museum\Rooms\Openings\Doorway.i: Museum\Rooms\Openings\Doorway.cpp.i
+.PHONY : Museum\Rooms\Openings\Doorway.i
 
 # target to preprocess a source file
-Museum\Rooms\Doorway.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.i
-.PHONY : Museum\Rooms\Doorway.cpp.i
+Museum\Rooms\Openings\Doorway.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Openings\Doorway.cpp.i
+.PHONY : Museum\Rooms\Openings\Doorway.cpp.i
 
-Museum\Rooms\Doorway.s: Museum\Rooms\Doorway.cpp.s
-.PHONY : Museum\Rooms\Doorway.s
+Museum\Rooms\Openings\Doorway.s: Museum\Rooms\Openings\Doorway.cpp.s
+.PHONY : Museum\Rooms\Openings\Doorway.s
 
 # target to generate assembly for a file
-Museum\Rooms\Doorway.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.s
-.PHONY : Museum\Rooms\Doorway.cpp.s
+Museum\Rooms\Openings\Doorway.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Openings\Doorway.cpp.s
+.PHONY : Museum\Rooms\Openings\Doorway.cpp.s
 
-Museum\Rooms\Openings.obj: Museum\Rooms\Openings.cpp.obj
-.PHONY : Museum\Rooms\Openings.obj
+Museum\Rooms\Openings\Windows.obj: Museum\Rooms\Openings\Windows.cpp.obj
+.PHONY : Museum\Rooms\Openings\Windows.obj
 
 # target to build an object file
-Museum\Rooms\Openings.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Openings.cpp.obj
-.PHONY : Museum\Rooms\Openings.cpp.obj
+Museum\Rooms\Openings\Windows.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Openings\Windows.cpp.obj
+.PHONY : Museum\Rooms\Openings\Windows.cpp.obj
 
-Museum\Rooms\Openings.i: Museum\Rooms\Openings.cpp.i
-.PHONY : Museum\Rooms\Openings.i
+Museum\Rooms\Openings\Windows.i: Museum\Rooms\Openings\Windows.cpp.i
+.PHONY : Museum\Rooms\Openings\Windows.i
 
 # target to preprocess a source file
-Museum\Rooms\Openings.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Openings.cpp.i
-.PHONY : Museum\Rooms\Openings.cpp.i
+Museum\Rooms\Openings\Windows.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Openings\Windows.cpp.i
+.PHONY : Museum\Rooms\Openings\Windows.cpp.i
 
-Museum\Rooms\Openings.s: Museum\Rooms\Openings.cpp.s
-.PHONY : Museum\Rooms\Openings.s
+Museum\Rooms\Openings\Windows.s: Museum\Rooms\Openings\Windows.cpp.s
+.PHONY : Museum\Rooms\Openings\Windows.s
 
 # target to generate assembly for a file
-Museum\Rooms\Openings.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Openings.cpp.s
-.PHONY : Museum\Rooms\Openings.cpp.s
+Museum\Rooms\Openings\Windows.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Openings\Windows.cpp.s
+.PHONY : Museum\Rooms\Openings\Windows.cpp.s
 
 Museum\Rooms\Room.obj: Museum\Rooms\Room.cpp.obj
 .PHONY : Museum\Rooms\Room.obj
@@ -333,30 +333,6 @@ Museum\Rooms\Room.s: Museum\Rooms\Room.cpp.s
 Museum\Rooms\Room.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Room.cpp.s
 .PHONY : Museum\Rooms\Room.cpp.s
-
-Museum\Rooms\Windows.obj: Museum\Rooms\Windows.cpp.obj
-.PHONY : Museum\Rooms\Windows.obj
-
-# target to build an object file
-Museum\Rooms\Windows.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.obj
-.PHONY : Museum\Rooms\Windows.cpp.obj
-
-Museum\Rooms\Windows.i: Museum\Rooms\Windows.cpp.i
-.PHONY : Museum\Rooms\Windows.i
-
-# target to preprocess a source file
-Museum\Rooms\Windows.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.i
-.PHONY : Museum\Rooms\Windows.cpp.i
-
-Museum\Rooms\Windows.s: Museum\Rooms\Windows.cpp.s
-.PHONY : Museum\Rooms\Windows.s
-
-# target to generate assembly for a file
-Museum\Rooms\Windows.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.s
-.PHONY : Museum\Rooms\Windows.cpp.s
 
 Museum\main.obj: Museum\main.cpp.obj
 .PHONY : Museum\main.obj
@@ -409,18 +385,15 @@ help:
 	@echo ... Museum/Exhibits/VoluminousExhibit.obj
 	@echo ... Museum/Exhibits/VoluminousExhibit.i
 	@echo ... Museum/Exhibits/VoluminousExhibit.s
-	@echo ... Museum/Rooms/Doorway.obj
-	@echo ... Museum/Rooms/Doorway.i
-	@echo ... Museum/Rooms/Doorway.s
-	@echo ... Museum/Rooms/Openings.obj
-	@echo ... Museum/Rooms/Openings.i
-	@echo ... Museum/Rooms/Openings.s
+	@echo ... Museum/Rooms/Openings/Doorway.obj
+	@echo ... Museum/Rooms/Openings/Doorway.i
+	@echo ... Museum/Rooms/Openings/Doorway.s
+	@echo ... Museum/Rooms/Openings/Windows.obj
+	@echo ... Museum/Rooms/Openings/Windows.i
+	@echo ... Museum/Rooms/Openings/Windows.s
 	@echo ... Museum/Rooms/Room.obj
 	@echo ... Museum/Rooms/Room.i
 	@echo ... Museum/Rooms/Room.s
-	@echo ... Museum/Rooms/Windows.obj
-	@echo ... Museum/Rooms/Windows.i
-	@echo ... Museum/Rooms/Windows.s
 	@echo ... Museum/main.obj
 	@echo ... Museum/main.i
 	@echo ... Museum/main.s
