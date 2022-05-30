@@ -27,7 +27,7 @@ public:
     double getSquare () const;
     double getSpace () const;
 
-  //  double squareOfDoors (int numberOfDoors);
+
 
 private:
     double m_width, m_length, m_height;

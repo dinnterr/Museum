@@ -11,11 +11,11 @@
 
 class Windows {
 public:
-    Windows (std::vector <std::vector <double>> windows, int numberOfWindows);
+    Windows (std::vector <std::vector <double>>& windows, int numberOfWindows);
     void setNumberOfWindows (int numberOfWindows) {m_numberOfWindows = numberOfWindows;}
     void setDimensions (std::vector <std::vector <double>> windows) {m_windows = std::move(windows);}
 
-    double squareOfWindows (int numberOfWindows) const;
+    double squareOfWindows () const;
 
 private:
     int m_numberOfWindows;
