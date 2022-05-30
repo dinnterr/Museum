@@ -3,4 +3,4 @@ project(museum)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(museum Museum/main.cpp Museum/Room.cpp Museum/Room.h Museum/Exhibit.cpp Museum/Exhibit.h Museum/Picture.cpp Museum/Picture.h Museum/VoluminousExhibit.cpp Museum/VoluminousExhibit.h Museum/Sculpture.cpp Museum/Sculpture.h Museum/Technics.cpp Museum/Technics.h Museum/HouseholdItem.cpp Museum/HouseholdItem.h Museum/Windows.cpp Museum/Windows.h)
+add_executable(museum Museum/main.cpp Museum/Rooms/Room.cpp Museum/Rooms/Room.h Museum/Exhibits/Exhibit.cpp Museum/Exhibits/Exhibit.h Museum/Exhibits/Picture.cpp Museum/Exhibits/Picture.h Museum/Exhibits/VoluminousExhibit.cpp Museum/Exhibits/VoluminousExhibit.h Museum/Exhibits/Sculpture.cpp Museum/Exhibits/Sculpture.h Museum/Exhibits/Technics.cpp Museum/Exhibits/Technics.h Museum/Exhibits/HouseholdItem.cpp Museum/Exhibits/HouseholdItem.h Museum/Rooms/Windows.cpp Museum/Rooms/Windows.h Museum/Rooms/Doors.cpp Museum/Rooms/Doors.h)

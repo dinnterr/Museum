@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Doors.cpp">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Doors.h">
+			<Option target="museum"/>
+		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibit.cpp">
 			<Option target="museum"/>
 		</Unit>

@@ -226,6 +226,25 @@ CMakeFiles\museum.dir\Museum\Windows.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Windows.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Windows.cpp
 <<
 
+CMakeFiles\museum.dir\Museum\Doors.cpp.obj: CMakeFiles\museum.dir\flags.make
+CMakeFiles\museum.dir\Museum\Doors.cpp.obj: ..\Museum\Doors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/museum.dir/Museum/Doors.cpp.obj"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Doors.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Doors.cpp
+<<
+
+CMakeFiles\museum.dir\Museum\Doors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Doors.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Doors.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Doors.cpp
+<<
+
+CMakeFiles\museum.dir\Museum\Doors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Doors.cpp.s"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Doors.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Doors.cpp
+<<
+
 # Object files for target museum
 museum_OBJECTS = \
 "CMakeFiles\museum.dir\Museum\main.cpp.obj" \
@@ -236,7 +255,8 @@ museum_OBJECTS = \
 "CMakeFiles\museum.dir\Museum\Sculpture.cpp.obj" \
 "CMakeFiles\museum.dir\Museum\Technics.cpp.obj" \
 "CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.obj" \
-"CMakeFiles\museum.dir\Museum\Windows.cpp.obj"
+"CMakeFiles\museum.dir\Museum\Windows.cpp.obj" \
+"CMakeFiles\museum.dir\Museum\Doors.cpp.obj"
 
 # External object files for target museum
 museum_EXTERNAL_OBJECTS =
@@ -250,9 +270,10 @@ museum.exe: CMakeFiles\museum.dir\Museum\Sculpture.cpp.obj
 museum.exe: CMakeFiles\museum.dir\Museum\Technics.cpp.obj
 museum.exe: CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.obj
 museum.exe: CMakeFiles\museum.dir\Museum\Windows.cpp.obj
+museum.exe: CMakeFiles\museum.dir\Museum\Doors.cpp.obj
 museum.exe: CMakeFiles\museum.dir\build.make
 museum.exe: CMakeFiles\museum.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable museum.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable museum.exe"
 	"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\museum.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\museum.dir\objects1.rsp @<<
  /out:museum.exe /implib:museum.lib /pdb:C:\Users\User\CLionProjects\museum\cmake-build-debug\museum.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

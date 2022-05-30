@@ -118,6 +118,30 @@ museum\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\build
 .PHONY : museum\fast
 
+Museum\Doors.obj: Museum\Doors.cpp.obj
+.PHONY : Museum\Doors.obj
+
+# target to build an object file
+Museum\Doors.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Doors.cpp.obj
+.PHONY : Museum\Doors.cpp.obj
+
+Museum\Doors.i: Museum\Doors.cpp.i
+.PHONY : Museum\Doors.i
+
+# target to preprocess a source file
+Museum\Doors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Doors.cpp.i
+.PHONY : Museum\Doors.cpp.i
+
+Museum\Doors.s: Museum\Doors.cpp.s
+.PHONY : Museum\Doors.s
+
+# target to generate assembly for a file
+Museum\Doors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\museum.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\museum.dir\Museum\Doors.cpp.s
+.PHONY : Museum\Doors.cpp.s
+
 Museum\Exhibit.obj: Museum\Exhibit.cpp.obj
 .PHONY : Museum\Exhibit.obj
 
@@ -343,6 +367,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... museum
+	@echo ... Museum/Doors.obj
+	@echo ... Museum/Doors.i
+	@echo ... Museum/Doors.s
 	@echo ... Museum/Exhibit.obj
 	@echo ... Museum/Exhibit.i
 	@echo ... Museum/Exhibit.s

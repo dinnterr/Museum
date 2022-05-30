@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string>
-#include "Room.h"
-#include "Exhibit.h"
-#include "Picture.h"
-#include "VoluminousExhibit.h"
-#include "Sculpture.h"
-#include "Technics.h"
-#include "HouseholdItem.h"
+#include "Rooms/Room.h"
+#include "Exhibits/Exhibit.h"
+#include "Exhibits/Picture.h"
+#include "Exhibits/VoluminousExhibit.h"
+#include "Exhibits/Sculpture.h"
+#include "Exhibits/Technics.h"
+#include "Exhibits/HouseholdItem.h"
 
 int main() {
 

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/User/CLionProjects/museum/Museum/Doors.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/Doors.cpp.obj"
   "C:/Users/User/CLionProjects/museum/Museum/Exhibit.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/Exhibit.cpp.obj"
   "C:/Users/User/CLionProjects/museum/Museum/HouseholdItem.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/HouseholdItem.cpp.obj"
   "C:/Users/User/CLionProjects/museum/Museum/Picture.cpp" "C:/Users/User/CLionProjects/museum/cmake-build-debug/CMakeFiles/museum.dir/Museum/Picture.cpp.obj"
