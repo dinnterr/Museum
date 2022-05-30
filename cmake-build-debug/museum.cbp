@@ -118,34 +118,25 @@
 		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/VoluminousExhibit.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings/Constants.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Constants.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings/Doorway.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Doorway.cpp">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings/Doorway.h">
-			<Option target="museum"/>
-		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings/Openings.h">
-			<Option target="museum"/>
-		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings/Windows.cpp">
-			<Option target="museum"/>
-		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings/Windows.h">
-			<Option target="museum"/>
-		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings.cpp">
-			<Option target="museum"/>
-		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Doorway.h">
 			<Option target="museum"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Room.cpp">
 			<Option target="museum"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Room.h">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Windows.cpp">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Windows.h">
 			<Option target="museum"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/main.cpp">

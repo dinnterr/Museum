@@ -6,7 +6,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/museum.dir/Museum/Exhibits/Technics.cpp.obj"
   "CMakeFiles/museum.dir/Museum/Exhibits/VoluminousExhibit.cpp.obj"
   "CMakeFiles/museum.dir/Museum/Rooms/Doorway.cpp.obj"
-  "CMakeFiles/museum.dir/Museum/Rooms/Openings.cpp.obj"
   "CMakeFiles/museum.dir/Museum/Rooms/Room.cpp.obj"
   "CMakeFiles/museum.dir/Museum/Rooms/Windows.cpp.obj"
   "CMakeFiles/museum.dir/Museum/main.cpp.obj"
