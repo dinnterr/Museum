@@ -136,6 +136,12 @@
 		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings/Windows.h">
 			<Option target="museum"/>
 		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings.cpp">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Openings.h">
+			<Option target="museum"/>
+		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Room.cpp">
 			<Option target="museum"/>
 		</Unit>
