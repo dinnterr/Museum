@@ -1,5 +1,5 @@
-#ifndef DOOR_H
-#define DOOR_H
+#ifndef DOORWAY_H
+#define DOORWAY_H
 
 #include <iostream>
 #include <exception>
@@ -23,4 +23,4 @@ private:
 };
 
 
-#endif //DOOR_H
+#endif //DOORWAY_H
