@@ -82,58 +82,61 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Doors.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/Exhibit.cpp">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Doors.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/Exhibit.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibit.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/HouseholdItem.cpp">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibit.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/HouseholdItem.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/HouseholdItem.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/Picture.cpp">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/HouseholdItem.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/Picture.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Picture.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/Sculpture.cpp">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Picture.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/Sculpture.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Room.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/Technics.cpp">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Room.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/Technics.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Sculpture.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/VoluminousExhibit.cpp">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Sculpture.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Exhibits/VoluminousExhibit.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Technics.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Constants.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Technics.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Doorway.cpp">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/VoluminousExhibit.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Doorway.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/VoluminousExhibit.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Room.cpp">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Windows.cpp">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Room.h">
 			<Option target="museum"/>
 		</Unit>
-		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Windows.h">
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Windows.cpp">
+			<Option target="museum"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/Rooms/Windows.h">
 			<Option target="museum"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/museum/Museum/main.cpp">

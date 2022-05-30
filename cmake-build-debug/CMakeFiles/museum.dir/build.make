@@ -74,203 +74,203 @@ CMakeFiles\museum.dir\Museum\main.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\main.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\main.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Room.cpp.obj: CMakeFiles\museum.dir\flags.make
-CMakeFiles\museum.dir\Museum\Room.cpp.obj: ..\Museum\Room.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/museum.dir/Museum/Room.cpp.obj"
+CMakeFiles\museum.dir\Museum\Rooms\Room.cpp.obj: CMakeFiles\museum.dir\flags.make
+CMakeFiles\museum.dir\Museum\Rooms\Room.cpp.obj: ..\Museum\Rooms\Room.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/museum.dir/Museum/Rooms/Room.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Room.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Room.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Rooms\Room.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Rooms\Room.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Room.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Room.cpp.i"
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Room.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Room.cpp
+CMakeFiles\museum.dir\Museum\Rooms\Room.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Rooms/Room.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Rooms\Room.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Rooms\Room.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Room.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Room.cpp.s"
+CMakeFiles\museum.dir\Museum\Rooms\Room.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Rooms/Room.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Room.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Room.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Rooms\Room.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Rooms\Room.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Exhibit.cpp.obj: CMakeFiles\museum.dir\flags.make
-CMakeFiles\museum.dir\Museum\Exhibit.cpp.obj: ..\Museum\Exhibit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/museum.dir/Museum/Exhibit.cpp.obj"
+CMakeFiles\museum.dir\Museum\Exhibits\Exhibit.cpp.obj: CMakeFiles\museum.dir\flags.make
+CMakeFiles\museum.dir\Museum\Exhibits\Exhibit.cpp.obj: ..\Museum\Exhibits\Exhibit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/museum.dir/Museum/Exhibits/Exhibit.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Exhibit.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Exhibit.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Exhibits\Exhibit.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Exhibits\Exhibit.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Exhibit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Exhibit.cpp.i"
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Exhibit.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Exhibit.cpp
+CMakeFiles\museum.dir\Museum\Exhibits\Exhibit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Exhibits/Exhibit.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Exhibits\Exhibit.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Exhibits\Exhibit.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Exhibit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Exhibit.cpp.s"
+CMakeFiles\museum.dir\Museum\Exhibits\Exhibit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Exhibits/Exhibit.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Exhibit.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Exhibit.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Exhibits\Exhibit.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Exhibits\Exhibit.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Picture.cpp.obj: CMakeFiles\museum.dir\flags.make
-CMakeFiles\museum.dir\Museum\Picture.cpp.obj: ..\Museum\Picture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/museum.dir/Museum/Picture.cpp.obj"
+CMakeFiles\museum.dir\Museum\Exhibits\Picture.cpp.obj: CMakeFiles\museum.dir\flags.make
+CMakeFiles\museum.dir\Museum\Exhibits\Picture.cpp.obj: ..\Museum\Exhibits\Picture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/museum.dir/Museum/Exhibits/Picture.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Picture.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Picture.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Exhibits\Picture.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Exhibits\Picture.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Picture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Picture.cpp.i"
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Picture.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Picture.cpp
+CMakeFiles\museum.dir\Museum\Exhibits\Picture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Exhibits/Picture.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Exhibits\Picture.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Exhibits\Picture.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Picture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Picture.cpp.s"
+CMakeFiles\museum.dir\Museum\Exhibits\Picture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Exhibits/Picture.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Picture.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Picture.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Exhibits\Picture.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Exhibits\Picture.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.obj: CMakeFiles\museum.dir\flags.make
-CMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.obj: ..\Museum\VoluminousExhibit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/museum.dir/Museum/VoluminousExhibit.cpp.obj"
+CMakeFiles\museum.dir\Museum\Exhibits\VoluminousExhibit.cpp.obj: CMakeFiles\museum.dir\flags.make
+CMakeFiles\museum.dir\Museum\Exhibits\VoluminousExhibit.cpp.obj: ..\Museum\Exhibits\VoluminousExhibit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/museum.dir/Museum/Exhibits/VoluminousExhibit.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\VoluminousExhibit.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Exhibits\VoluminousExhibit.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Exhibits\VoluminousExhibit.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/VoluminousExhibit.cpp.i"
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\VoluminousExhibit.cpp
+CMakeFiles\museum.dir\Museum\Exhibits\VoluminousExhibit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Exhibits/VoluminousExhibit.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Exhibits\VoluminousExhibit.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Exhibits\VoluminousExhibit.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/VoluminousExhibit.cpp.s"
+CMakeFiles\museum.dir\Museum\Exhibits\VoluminousExhibit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Exhibits/VoluminousExhibit.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\VoluminousExhibit.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Exhibits\VoluminousExhibit.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Exhibits\VoluminousExhibit.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Sculpture.cpp.obj: CMakeFiles\museum.dir\flags.make
-CMakeFiles\museum.dir\Museum\Sculpture.cpp.obj: ..\Museum\Sculpture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/museum.dir/Museum/Sculpture.cpp.obj"
+CMakeFiles\museum.dir\Museum\Exhibits\Sculpture.cpp.obj: CMakeFiles\museum.dir\flags.make
+CMakeFiles\museum.dir\Museum\Exhibits\Sculpture.cpp.obj: ..\Museum\Exhibits\Sculpture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/museum.dir/Museum/Exhibits/Sculpture.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Sculpture.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Sculpture.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Exhibits\Sculpture.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Exhibits\Sculpture.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Sculpture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Sculpture.cpp.i"
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Sculpture.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Sculpture.cpp
+CMakeFiles\museum.dir\Museum\Exhibits\Sculpture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Exhibits/Sculpture.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Exhibits\Sculpture.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Exhibits\Sculpture.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Sculpture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Sculpture.cpp.s"
+CMakeFiles\museum.dir\Museum\Exhibits\Sculpture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Exhibits/Sculpture.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Sculpture.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Sculpture.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Exhibits\Sculpture.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Exhibits\Sculpture.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Technics.cpp.obj: CMakeFiles\museum.dir\flags.make
-CMakeFiles\museum.dir\Museum\Technics.cpp.obj: ..\Museum\Technics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/museum.dir/Museum/Technics.cpp.obj"
+CMakeFiles\museum.dir\Museum\Exhibits\Technics.cpp.obj: CMakeFiles\museum.dir\flags.make
+CMakeFiles\museum.dir\Museum\Exhibits\Technics.cpp.obj: ..\Museum\Exhibits\Technics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/museum.dir/Museum/Exhibits/Technics.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Technics.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Technics.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Exhibits\Technics.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Exhibits\Technics.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Technics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Technics.cpp.i"
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Technics.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Technics.cpp
+CMakeFiles\museum.dir\Museum\Exhibits\Technics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Exhibits/Technics.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Exhibits\Technics.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Exhibits\Technics.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Technics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Technics.cpp.s"
+CMakeFiles\museum.dir\Museum\Exhibits\Technics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Exhibits/Technics.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Technics.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Technics.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Exhibits\Technics.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Exhibits\Technics.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.obj: CMakeFiles\museum.dir\flags.make
-CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.obj: ..\Museum\HouseholdItem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/museum.dir/Museum/HouseholdItem.cpp.obj"
+CMakeFiles\museum.dir\Museum\Exhibits\HouseholdItem.cpp.obj: CMakeFiles\museum.dir\flags.make
+CMakeFiles\museum.dir\Museum\Exhibits\HouseholdItem.cpp.obj: ..\Museum\Exhibits\HouseholdItem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/museum.dir/Museum/Exhibits/HouseholdItem.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\HouseholdItem.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\HouseholdItem.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Exhibits\HouseholdItem.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Exhibits\HouseholdItem.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/HouseholdItem.cpp.i"
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\HouseholdItem.cpp
+CMakeFiles\museum.dir\Museum\Exhibits\HouseholdItem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Exhibits/HouseholdItem.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Exhibits\HouseholdItem.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Exhibits\HouseholdItem.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/HouseholdItem.cpp.s"
+CMakeFiles\museum.dir\Museum\Exhibits\HouseholdItem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Exhibits/HouseholdItem.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\HouseholdItem.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\HouseholdItem.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Exhibits\HouseholdItem.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Exhibits\HouseholdItem.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Windows.cpp.obj: CMakeFiles\museum.dir\flags.make
-CMakeFiles\museum.dir\Museum\Windows.cpp.obj: ..\Museum\Windows.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/museum.dir/Museum/Windows.cpp.obj"
+CMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.obj: CMakeFiles\museum.dir\flags.make
+CMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.obj: ..\Museum\Rooms\Windows.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/museum.dir/Museum/Rooms/Windows.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Windows.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Windows.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Rooms\Windows.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Windows.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Windows.cpp.i"
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Windows.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Windows.cpp
+CMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Rooms/Windows.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Rooms\Windows.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Windows.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Windows.cpp.s"
+CMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Rooms/Windows.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Windows.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Windows.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Rooms\Windows.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Doors.cpp.obj: CMakeFiles\museum.dir\flags.make
-CMakeFiles\museum.dir\Museum\Doors.cpp.obj: ..\Museum\Doors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/museum.dir/Museum/Doors.cpp.obj"
+CMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.obj: CMakeFiles\museum.dir\flags.make
+CMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.obj: ..\Museum\Rooms\Doorway.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/museum.dir/Museum/Rooms/Doorway.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Doors.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Doors.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.obj /FdCMakeFiles\museum.dir\ /FS -c C:\Users\User\CLionProjects\museum\Museum\Rooms\Doorway.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Doors.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Doors.cpp.i"
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Doors.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Doors.cpp
+CMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/museum.dir/Museum/Rooms/Doorway.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\CLionProjects\museum\Museum\Rooms\Doorway.cpp
 <<
 
-CMakeFiles\museum.dir\Museum\Doors.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Doors.cpp.s"
+CMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/museum.dir/Museum/Rooms/Doorway.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Doors.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Doors.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.s /c C:\Users\User\CLionProjects\museum\Museum\Rooms\Doorway.cpp
 <<
 
 # Object files for target museum
 museum_OBJECTS = \
 "CMakeFiles\museum.dir\Museum\main.cpp.obj" \
-"CMakeFiles\museum.dir\Museum\Room.cpp.obj" \
-"CMakeFiles\museum.dir\Museum\Exhibit.cpp.obj" \
-"CMakeFiles\museum.dir\Museum\Picture.cpp.obj" \
-"CMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.obj" \
-"CMakeFiles\museum.dir\Museum\Sculpture.cpp.obj" \
-"CMakeFiles\museum.dir\Museum\Technics.cpp.obj" \
-"CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.obj" \
-"CMakeFiles\museum.dir\Museum\Windows.cpp.obj" \
-"CMakeFiles\museum.dir\Museum\Doors.cpp.obj"
+"CMakeFiles\museum.dir\Museum\Rooms\Room.cpp.obj" \
+"CMakeFiles\museum.dir\Museum\Exhibits\Exhibit.cpp.obj" \
+"CMakeFiles\museum.dir\Museum\Exhibits\Picture.cpp.obj" \
+"CMakeFiles\museum.dir\Museum\Exhibits\VoluminousExhibit.cpp.obj" \
+"CMakeFiles\museum.dir\Museum\Exhibits\Sculpture.cpp.obj" \
+"CMakeFiles\museum.dir\Museum\Exhibits\Technics.cpp.obj" \
+"CMakeFiles\museum.dir\Museum\Exhibits\HouseholdItem.cpp.obj" \
+"CMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.obj" \
+"CMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.obj"
 
 # External object files for target museum
 museum_EXTERNAL_OBJECTS =
 
 museum.exe: CMakeFiles\museum.dir\Museum\main.cpp.obj
-museum.exe: CMakeFiles\museum.dir\Museum\Room.cpp.obj
-museum.exe: CMakeFiles\museum.dir\Museum\Exhibit.cpp.obj
-museum.exe: CMakeFiles\museum.dir\Museum\Picture.cpp.obj
-museum.exe: CMakeFiles\museum.dir\Museum\VoluminousExhibit.cpp.obj
-museum.exe: CMakeFiles\museum.dir\Museum\Sculpture.cpp.obj
-museum.exe: CMakeFiles\museum.dir\Museum\Technics.cpp.obj
-museum.exe: CMakeFiles\museum.dir\Museum\HouseholdItem.cpp.obj
-museum.exe: CMakeFiles\museum.dir\Museum\Windows.cpp.obj
-museum.exe: CMakeFiles\museum.dir\Museum\Doors.cpp.obj
+museum.exe: CMakeFiles\museum.dir\Museum\Rooms\Room.cpp.obj
+museum.exe: CMakeFiles\museum.dir\Museum\Exhibits\Exhibit.cpp.obj
+museum.exe: CMakeFiles\museum.dir\Museum\Exhibits\Picture.cpp.obj
+museum.exe: CMakeFiles\museum.dir\Museum\Exhibits\VoluminousExhibit.cpp.obj
+museum.exe: CMakeFiles\museum.dir\Museum\Exhibits\Sculpture.cpp.obj
+museum.exe: CMakeFiles\museum.dir\Museum\Exhibits\Technics.cpp.obj
+museum.exe: CMakeFiles\museum.dir\Museum\Exhibits\HouseholdItem.cpp.obj
+museum.exe: CMakeFiles\museum.dir\Museum\Rooms\Windows.cpp.obj
+museum.exe: CMakeFiles\museum.dir\Museum\Rooms\Doorway.cpp.obj
 museum.exe: CMakeFiles\museum.dir\build.make
 museum.exe: CMakeFiles\museum.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User\CLionProjects\museum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable museum.exe"
