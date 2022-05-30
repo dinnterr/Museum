@@ -6,13 +6,13 @@ Windows::Windows (int numberOfWindows){
         throw std::invalid_argument("Number of windows cannot be negative.");
     }
     else if (numberOfWindows == 0) {
-        m_numberOfWindows = 0;
+        m_numberOfOpenings = 0;
     }
     else {
-        m_numberOfWindows = numberOfWindows;
+        m_numberOfOpenings = numberOfWindows;
         for (int i = 0; i < numberOfWindows; i++) {
-            m_windows[i][0] = 1760;
-            m_windows[i][1] = 1420;
+            m_openings[i][0] = 1760;
+            m_openings[i][1] = 1420;
         }
     }
 }
@@ -22,11 +22,11 @@ Windows::Windows(int numberOfWindows, std::vector <std::vector <double>>& window
         throw std::invalid_argument("If you enter window parameters, then their number cannot be negative or equal to zero.");
     }
     else {
-        m_numberOfWindows = numberOfWindows;
+        m_numberOfOpenings = numberOfWindows;
         for (int i = 0; i < numberOfWindows; i++) {
             for (int j = 0; j < DIMENSIONS; j++) {
                 if (windows[i][j] > 0) {
-                    m_windows[i][j] = windows[i][j];
+                    m_openings[i][j] = windows[i][j];
                 }
                 throw std::invalid_argument("Cannot set window(-s). Dimensions cannot be negative.");
             }
@@ -34,12 +34,12 @@ Windows::Windows(int numberOfWindows, std::vector <std::vector <double>>& window
     }
 }
 
-double Windows::squareOfWindows () const{
-    if (m_numberOfWindows == 0){
+double Windows::squareOfOpenings () const {
+    if (m_numberOfOpenings == 0){
         return 0;
     }
     else {
-        int const N = m_numberOfWindows;
+        int const N = m_numberOfOpenings;
 
         std::vector<double> individualWindowAreas(N);
 
@@ -49,7 +49,7 @@ double Windows::squareOfWindows () const{
 
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < DIMENSIONS; j++) {
-                individualWindowAreas[i] *= m_windows[i][j];
+                individualWindowAreas[i] *= m_openings[i][j];
             }
         }
         double square = 0;

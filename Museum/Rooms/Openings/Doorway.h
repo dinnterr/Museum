@@ -10,6 +10,7 @@
 class Doorway {
     Doorway (int numberOfDoorways);
     Doorway (std::vector <std::vector <double>>& doorways, int numberOfDoorways);
+
     void setNumberOfDoors (int numberOfDoorways) {m_numberOfDoorways= numberOfDoorways;}
     void setDimensions (std::vector <std::vector <double>> doorways) {m_doorways = std::move(doorways);}
 
