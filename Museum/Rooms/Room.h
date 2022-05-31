@@ -8,11 +8,12 @@
 #include <string>
 #include <vector>
 #include "Windows.h"
+#include "Doorway.h"
 
 class Room{
 public:
 
-    Room(double width, double length, double height);
+    Room(double width, double length, double height, const Windows& windows, const Doorway& doorways);
 
     double getWidth () const{return m_width;}
     double getLength () const{return m_length;}
@@ -27,7 +28,7 @@ public:
     double getSquare () const;
     double getSpace () const;
 
-
+    double usableArea (const Windows &w, const Doorway &d) const;
 
 private:
     double m_width, m_length, m_height;

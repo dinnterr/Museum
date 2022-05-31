@@ -8,6 +8,7 @@
 #include <vector>
 
 class Doorway {
+public:
     Doorway (int numberOfDoorways);
     Doorway (std::vector <std::vector <double>>& doorways, int numberOfDoorways);
 
