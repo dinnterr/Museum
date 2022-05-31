@@ -1,6 +1,6 @@
 #include "Picture.h"
 
-Picture::Picture (std::string author, std::string country, int year, double width, double height): Exhibit(author, country, year){
+Picture::Picture (const std::string& author, const std::string& country, int year, double width, double height): Exhibit(author, country, year){
     if (width < 0 || height < 0){
         throw std::invalid_argument("Cannot create a picture! Width and/or height cannot be negative.");
     }
@@ -8,7 +8,7 @@ Picture::Picture (std::string author, std::string country, int year, double widt
     m_height = height;
 }
 
-Picture::Picture (std::string country, int year, double width, double height): Exhibit(country, year){
+Picture::Picture (const std::string& country, int year, double width, double height): Exhibit(country, year){
     if (width < 0 || height < 0){
         throw std::invalid_argument("Cannot create a picture! Width and/or height cannot be negative.");
     }

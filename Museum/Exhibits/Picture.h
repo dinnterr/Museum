@@ -5,14 +5,11 @@
 
 class Picture : public Exhibit {
 public:
-    Picture (std::string author, std::string country, int year, double width, double heigh);
-    Picture (std::string country, int year, double width, double heigh);
-
-    double getWidth () const {return m_width;}
-    double getHeigth () const {return  m_height;}
+    Picture (const std::string& author, const std::string& country, int year, double width, double height);
+    Picture (const std::string& country, int year, double width, double height);
 
     void setWidth (double width){m_width = width;}
-    void setHeigth (double heigth){m_height = heigth;}
+    void setHeight (double height){m_height = height;}
 
     std::string Info() const override;
 

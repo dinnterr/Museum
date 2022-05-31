@@ -9,15 +9,11 @@
 
 class Exhibit{
 public:
-    Exhibit(std::string author, std::string country, int year);
-    Exhibit(std::string country, int year);
+    Exhibit(const std::string& author, const std::string& country, int year);
+    Exhibit(const std::string& country, int year);
 
-    std::string getAuthor () const {return m_author;}
-    std::string getCountry () const {return m_country;}
-    int getYear () const {return m_year;}
-
-    void setAuthor (std::string author){m_author = author;}
-    void setCountry (std::string country){m_country = country;}
+    void setAuthor (const std::string& author){m_author = author;}
+    void setCountry (const std::string& country){m_country = country;}
     void setYear (int year){m_year = year;}
 
     virtual std::string Info() const;

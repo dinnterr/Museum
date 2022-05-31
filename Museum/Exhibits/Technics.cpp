@@ -1,12 +1,14 @@
 #include "Technics.h"
 
-Technics::Technics(std::string author, std::string country, int year, double width, double length, double height, std::string material) :
+Technics::Technics(const std::string& author, const std::string& country, int year,
+                   double width, double length, double height, const std::string& material) :
         VoluminousExhibit(author, country, year, width, length, height){
     m_material = material;
 }
 
 
-Technics::Technics(std::string country, int year, double width, double length, double height, std::string material) :
+Technics::Technics(const std::string& country, int year, double width, double length,
+                   double height, const std::string& material) :
         VoluminousExhibit(country, year, width, length, height){
     m_material = material;
 }
