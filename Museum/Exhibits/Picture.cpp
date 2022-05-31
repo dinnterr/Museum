@@ -21,3 +21,7 @@ std::string Picture::Info() const{
     ss << Exhibit::Info() << "\nIt`s a picture. Size of picture: " << m_width << '*' << m_height << '.';
     return ss.str();
 }
+
+double Picture::Area() const {
+    return m_height*m_width;
+}

@@ -25,3 +25,7 @@ std::string VoluminousExhibit::Info() const {
     ss << Exhibit::Info() << "\nIt`s a voluminous exhibit. Size of voluminous exhibit: " << m_width << '*' << m_length << '*' << m_height << '.';
     return ss.str();
 }
+
+double VoluminousExhibit::Area() const {
+    return m_width*m_length;
+}

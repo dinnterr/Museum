@@ -11,6 +11,7 @@ public:
     void setWidth (double width){m_width = width;}
     void setHeight (double height){m_height = height;}
 
+    double Area() const;
     std::string Info() const override;
 
 private:
