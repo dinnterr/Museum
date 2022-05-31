@@ -25,10 +25,12 @@ public:
 
     std::string Info() const;
 
-    double getSquare () const;
+    double getFloorArea () const;
+    double getWallArea () const;
     double getSpace () const;
 
-    double usableArea (const Windows &w, const Doorway &d) const;
+    double usableWallArea (const Windows &w, const Doorway &d) const;
+
 
 private:
     double m_width, m_length, m_height;
