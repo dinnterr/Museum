@@ -6,7 +6,7 @@
 class HouseholdItem : public  VoluminousExhibit{
 public:
     HouseholdItem(std::string author, std::string country, int year, double width, double length,
-                  double height, bool  posibilityOfUsing);
+                  double height, bool posibilityOfUsing);
     HouseholdItem(std::string country, int year, double width, double length,
                   double height, bool posibilityOfUsing);
     std::string Info() const override;
