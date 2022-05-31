@@ -13,7 +13,6 @@ public:
 
 private:
     std::string m_type;
-
 };
 
 #endif //SCULPTURE_H
