@@ -27,7 +27,8 @@ public:
 
 
     void printExhibits() const;
-    void placeExhibit (Exhibit* exhibit) const;
+
+    //void placePicture (Exhibit* exhibit, Room* room) const;
 
 
 private:

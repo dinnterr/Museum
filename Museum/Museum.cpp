@@ -49,6 +49,7 @@ void Museum::printExhibits() const
     }
 }
 
-void Museum::placeExhibit(Exhibit* exhibit) const {
+/*void Museum::placeExhibit(Exhibit* exhibit, Room* room) const {
+    if()
 
-}
+}*/
