@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <vector>
+#include <iomanip>
 #include "Rooms/Room.h"
 #include "Rooms/Windows.h"
 #include "Rooms/Doorway.h"
@@ -25,10 +26,13 @@ public:
     void removeExhibit (int pos);
 
 
+    void printExhibits() const;
+
 
 private:
     std::vector <Room*> m_rooms;
     std::vector <Exhibit*> m_exhibits;
+
 };
 
 #endif //MUSEUM_H

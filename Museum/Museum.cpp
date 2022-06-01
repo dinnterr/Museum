@@ -38,3 +38,13 @@ void Museum::removeExhibit(int pos) {
         m_exhibits.erase(m_exhibits.begin() + pos - 1);
     }
 }
+
+
+void Museum::printExhibits() const
+{
+    int i = 1;
+    for (const auto& exhibit : m_exhibits)
+    {
+        std::cout << i++ << ' ' << std::setprecision(2) << exhibit->Info() << std::endl;
+    }
+}
