@@ -48,3 +48,7 @@ void Museum::printExhibits() const
         std::cout << i++ << ' ' << std::setprecision(2) << exhibit->Info() << std::endl;
     }
 }
+
+void Museum::placeExhibit(Exhibit* exhibit) const {
+
+}

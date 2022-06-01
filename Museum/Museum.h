@@ -27,6 +27,7 @@ public:
 
 
     void printExhibits() const;
+    void placeExhibit (Exhibit* exhibit) const;
 
 
 private:
