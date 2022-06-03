@@ -1,13 +1,17 @@
 #include "Room.h"
 
-Room::Room(double width, double length, double height, const Windows& windows, const Doorway& doorways){
-    if (usableWallArea(windows, doorways) <= 0)
+Room::Room(double width, double length, double height, std::vector<Windows>& window, std::vector<Doorway>& doorway){
+    if (usableWallArea(window, doorway) <= 0)
     {
         throw std::invalid_argument ("Cannot create a room. It does not have usable area.");
     }
     m_width = width;
     m_length = length;
     m_height = height;
+    m_windows = window;
+    m_doorways = doorway;
+    setFloorArea();
+    setUsableWallArea(window, doorway);
 }
 
 std::string Room::Info() const{
@@ -19,20 +23,30 @@ std::string Room::Info() const{
     return ss.str();
 }
 
-double Room::getFloorArea () const{
-    return m_width*m_length;
+double Room::usableWallArea (std::vector<Windows>& w, std::vector<Doorway>& d) const{
+    double usableArea = m_length*m_height*2 + m_width*m_height*2;
+    for (auto const & window : w){
+        usableArea -= window.squareOfWindows();
+    }
+    for (auto const & doorway : d){
+        usableArea -= doorway.squareOfDoorways();
+    }
+    return usableArea;
 }
 
-double Room::getWallArea () const{
-    return m_length*m_height*2 + m_width*m_height*2;
+void Room::addWindow(const Windows & window) {
+    m_windows.push_back(window);
 }
 
-double Room::getSpace () const{
-    return m_width*m_length*m_height;
+void Room::addDoorway(const Doorway & doorway) {
+    m_doorways.push_back(doorway);
 }
 
-double Room::usableWallArea (const Windows &w, const Doorway &d) const{
-    double usableArea = 0;
-    usableArea = getWallArea() - (w.squareOfWindows() + d.squareOfDoorways());
-    return  usableArea;
+void Room::setFloorArea (){
+    m_floorArea = m_width*m_length;
 }
+
+void Room::setUsableWallArea(std::vector<Windows>& w, std::vector<Doorway>& d) {
+    m_usableWallArea = usableWallArea(w, d);
+}
+

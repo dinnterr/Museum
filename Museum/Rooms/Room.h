@@ -13,7 +13,7 @@
 class Room{
 public:
 
-    Room(double width, double length, double height, const Windows& windows, const Doorway& doorways);
+    Room(double width, double length, double height, std::vector<Windows>& window, std::vector<Doorway>& doorway);
 
     double getWidth () const{return m_width;}
     double getLength () const{return m_length;}
@@ -22,18 +22,21 @@ public:
     void setWidth (double width) {m_width = width;}
     void setLength (double length) {m_length = length;}
     void setHeight (double height) {m_height = height;}
+    void addWindow(const Windows & window);
+    void addDoorway(const Doorway & doorway);
+
+    double usableWallArea (std::vector<Windows>& w, std::vector<Doorway>& d) const;
 
     std::string Info() const;
 
-    double getFloorArea () const;
-    double getWallArea () const;
-    double getSpace () const;
-
-    double usableWallArea (const Windows &w, const Doorway &d) const;
-
-
 private:
     double m_width, m_length, m_height;
+    std::vector <Windows> m_windows;
+    std::vector <Doorway> m_doorways;
+    void setFloorArea ();
+    void setUsableWallArea (std::vector<Windows>& w, std::vector<Doorway>& d);
+    double m_floorArea, m_usableWallArea;
+
 };
 
 #endif //ROOM_H
