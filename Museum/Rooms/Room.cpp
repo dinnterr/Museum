@@ -10,8 +10,8 @@ Room::Room(double width, double length, double height, std::vector<Windows>& win
     m_height = height;
     m_windows = window;
     m_doorways = doorway;
-    setFloorArea();
-    setUsableWallArea(window, doorway);
+    m_floorArea = width*length;
+    m_usableWallArea = usableWallArea(window, doorway);
 }
 
 std::string Room::Info() const{
@@ -42,11 +42,4 @@ void Room::addDoorway(const Doorway & doorway) {
     m_doorways.push_back(doorway);
 }
 
-void Room::setFloorArea (){
-    m_floorArea = m_width*m_length;
-}
-
-void Room::setUsableWallArea(std::vector<Windows>& w, std::vector<Doorway>& d) {
-    m_usableWallArea = usableWallArea(w, d);
-}
 

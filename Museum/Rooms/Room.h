@@ -25,16 +25,13 @@ public:
     void addWindow(const Windows & window);
     void addDoorway(const Doorway & doorway);
 
-    double usableWallArea (std::vector<Windows>& w, std::vector<Doorway>& d) const;
-
     std::string Info() const;
 
 private:
     double m_width, m_length, m_height;
     std::vector <Windows> m_windows;
     std::vector <Doorway> m_doorways;
-    void setFloorArea ();
-    void setUsableWallArea (std::vector<Windows>& w, std::vector<Doorway>& d);
+    double usableWallArea (std::vector<Windows>& w, std::vector<Doorway>& d) const;
     double m_floorArea, m_usableWallArea;
 
 };
