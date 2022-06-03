@@ -10,8 +10,8 @@
 
 class Exhibit{
 public:
-    Exhibit(const std::string& author, const std::string& country, int year);
-    Exhibit(const std::string& country, int year);
+    Exhibit(const std::string& author, const std::string& name, const std::string& country, int year);
+    Exhibit(const std::string& name, const std::string& country, int year);
 
     void setAuthor (const std::string& author){m_author = author;}
     void setCountry (const std::string& country){m_country = country;}
@@ -23,7 +23,7 @@ public:
 
 private:
     std::string m_author = "Unknown";
-    std::string m_country;
+    std::string m_country, m_name;
     int m_year;
     Room* m_room;
 };

@@ -5,9 +5,9 @@
 
 class Sculpture : public  VoluminousExhibit {
 public:
-    Sculpture(const std::string& author, const std::string& country, int year, double width, double length,
+    Sculpture(const std::string& author, const std::string& name, const std::string& country, int year, double width, double length,
               double height, const std::string& type);
-    Sculpture(const std::string& country, int year, double width, double length, double height, const std::string& type);
+    Sculpture(const std::string& name, const std::string& country, int year, double width, double length, double height, const std::string& type);
 
     std::string Info() const override;
 

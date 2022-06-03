@@ -1,14 +1,14 @@
 #include "Sculpture.h"
 
-Sculpture::Sculpture(const std::string& author, const std::string& country, int year, double width, double length,
+Sculpture::Sculpture(const std::string& author, const std::string& name, const std::string& country, int year, double width, double length,
                      double height, const std::string& type) :
-VoluminousExhibit (author, country, year, width, length, height){
+VoluminousExhibit (author, name, country, year, width, length, height){
     m_type = type;
 }
 
-Sculpture::Sculpture(const std::string& country, int year, double width, double length,
+Sculpture::Sculpture(const std::string& name, const std::string& country, int year, double width, double length,
                      double height, const std::string& type) :
-        VoluminousExhibit (country, year, width, length, height){
+        VoluminousExhibit (name, country, year, width, length, height){
     m_type = type;
 }
 

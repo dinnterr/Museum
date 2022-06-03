@@ -5,8 +5,8 @@
 
 class Picture : public Exhibit {
 public:
-    Picture (const std::string& author, const std::string& country, int year, double width, double height);
-    Picture (const std::string& country, int year, double width, double height);
+    Picture (const std::string& author, const std::string& name, const std::string& country, int year, double width, double height);
+    Picture (const std::string& name, const std::string& country, int year, double width, double height);
 
     void setWidth (double width){m_width = width;}
     void setHeight (double height){m_height = height;}
