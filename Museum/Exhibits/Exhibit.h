@@ -13,6 +13,8 @@ public:
     Exhibit(const std::string& author, const std::string& name, const std::string& country, int year);
     Exhibit(const std::string& name, const std::string& country, int year);
 
+    virtual std::string getName () const {return m_name;}
+
     void setAuthor (const std::string& author){m_author = author;}
     void setCountry (const std::string& country){m_country = country;}
     void setYear (int year){m_year = year;}
