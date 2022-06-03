@@ -27,6 +27,7 @@ public:
     void addWindow(const Windows & window);
     void addDoorway(const Doorway & doorway);
     void setUsableWallArea (double newArea);
+    void setFloorArea (double newArea);
 
     double usableWallArea (std::vector<Windows>& w, std::vector<Doorway>& d) const;
 

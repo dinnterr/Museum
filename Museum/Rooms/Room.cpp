@@ -46,4 +46,8 @@ void Room::setUsableWallArea(double newArea) {
     m_usableWallArea = newArea;
 }
 
+void Room::setFloorArea(double newArea) {
+    m_floorArea = newArea;
+}
+
 
