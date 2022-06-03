@@ -23,7 +23,7 @@ public:
     void removeRoom (int pos);
 
     void addExhibit (Exhibit* exhibit);
-    void removeExhibit (int pos);
+    void removeExhibit (Exhibit* exhibit);
 
     void place(Exhibit* exhibit, Room* room);
     void place(Picture* picture, Room* room);

@@ -28,14 +28,14 @@ void Museum::addExhibit(Exhibit *exhibit) {
     m_exhibits.push_back(exhibit);
 }
 
-void Museum::removeExhibit(int pos) {
-    if (pos > m_exhibits.size() || pos <= 0)
+void Museum::removeExhibit(Exhibit* exhibit) {
+    if (find(m_exhibits.begin(), m_exhibits.end(), exhibit->getName()) > m_rooms.size() || find(m_exhibits.begin(), m_exhibits.end(), exhibit->getName()) <= 0)
     {
-        throw std::invalid_argument("Wrong number.");
+        throw std::invalid_argument("Exhibit does not exist.");
     }
     else
     {
-        m_exhibits.erase(m_exhibits.begin() + pos - 1);
+        m_exhibits.erase(m_exhibits.begin() + find(m_exhibits.begin(), m_exhibits.end(), exhibit->getName()) - 1);
     }
 }
 
