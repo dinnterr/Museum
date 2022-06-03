@@ -42,4 +42,8 @@ void Room::addDoorway(const Doorway & doorway) {
     m_doorways.push_back(doorway);
 }
 
+void Room::setUsableWallArea(double newArea) {
+    m_usableWallArea = newArea;
+}
+
 
