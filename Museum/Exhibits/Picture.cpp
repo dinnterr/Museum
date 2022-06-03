@@ -25,3 +25,11 @@ std::string Picture::Info() const{
 double Picture::Area() const {
     return m_height*m_width;
 }
+
+void Picture::place(Room *room) {
+    if(Area() <= room->getUsableWallArea()) {
+        Exhibit::place(room);
+    }
+    double area = (room->getUsableWallArea() - Area());
+    room->setUsableWallArea(area);
+}

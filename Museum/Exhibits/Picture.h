@@ -14,6 +14,8 @@ public:
     double Area() const;
     std::string Info() const override;
 
+    void place(Room* room) override;
+
 private:
     double m_width, m_height;
 };

@@ -6,6 +6,7 @@
 #include <stdexcept>
 #include <sstream>
 #include <string>
+#include "../Rooms/Room.h"
 
 class Exhibit{
 public:
@@ -18,10 +19,13 @@ public:
 
     virtual std::string Info() const;
 
+    virtual void place(Room* room);
+
 private:
     std::string m_author = "Unknown";
     std::string m_country;
     int m_year;
+    Room* m_room;
 };
 
 #endif //EXHIBIT_H

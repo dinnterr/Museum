@@ -49,7 +49,14 @@ void Museum::printExhibits() const
     }
 }
 
-/*void Museum::placeExhibit(Exhibit* exhibit, Room* room) const {
-    if()
+void Museum::place(Exhibit *exhibit, Room *room) {
+    exhibit->place(room);
+}
 
-}*/
+void Museum::place(Picture *picture, Room *room) {
+    picture->place(room);
+}
+
+void Museum::place(VoluminousExhibit *v_exhibit, Room *room) {
+    v_exhibit->place(room);
+}

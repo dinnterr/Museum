@@ -25,11 +25,11 @@ public:
     void addExhibit (Exhibit* exhibit);
     void removeExhibit (int pos);
 
+    void place(Exhibit* exhibit, Room* room);
+    void place(Picture* picture, Room* room);
+    void place(VoluminousExhibit* v_exhibit, Room* room);
 
     void printExhibits() const;
-
-    //void placePicture (Exhibit* exhibit, Room* room) const;
-
 
 private:
     std::vector <Room*> m_rooms;

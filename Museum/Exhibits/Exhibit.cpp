@@ -1,12 +1,13 @@
 #include "Exhibit.h"
 
 Exhibit::Exhibit(const std::string& author, const std::string& country, int year){
-    if ( year < 0) {
+    if (year < 0) {
         throw std::invalid_argument("Cannot create an exhibit! Year cannot be negative.");
     }
     m_author = author;
     m_country = country;
     m_year = year;
+    m_room = nullptr;
 }
 
 Exhibit::Exhibit(const std::string& country, int year){
@@ -24,4 +25,8 @@ std::string Exhibit::Info() const{
        << "\nAuthor: "<< m_author << ". " << "Country: " << m_country << '.'
        << "\nYear: " << m_year << '.';
     return ss.str();
+}
+
+void Exhibit::place(Room * room) {
+    m_room = room;
 }
