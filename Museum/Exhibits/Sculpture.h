@@ -11,6 +11,8 @@ public:
 
     std::string Info() const override;
 
+    void place(Room* room) override;
+
 private:
     std::string m_type;
 };

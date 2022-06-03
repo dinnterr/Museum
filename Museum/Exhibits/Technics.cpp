@@ -18,3 +18,7 @@ std::string Technics::Info() const{
     ss << VoluminousExhibit::Info() << "\nIt is a technics.\nMaterial: " << m_material << '.';
     return ss.str();
 }
+
+void Technics::place(Room *room) {
+    VoluminousExhibit::place(room);
+}

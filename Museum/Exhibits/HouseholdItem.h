@@ -11,6 +11,8 @@ public:
                   double height, bool posibilityOfUsing);
     std::string Info() const override;
 
+    void place(Room* room) override;
+
 private:
     bool m_posibilityOfUsing;
 };

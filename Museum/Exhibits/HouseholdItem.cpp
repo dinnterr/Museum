@@ -15,3 +15,7 @@ std::string HouseholdItem::Info() const{
     ss << VoluminousExhibit::Info() << "\nIt is a household item.";
     return ss.str();
 }
+
+void HouseholdItem::place(Room *room) {
+    VoluminousExhibit::place(room);
+}

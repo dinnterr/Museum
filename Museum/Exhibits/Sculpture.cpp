@@ -17,3 +17,7 @@ std::string Sculpture::Info() const{
     ss << VoluminousExhibit::Info() << "\nIt is a sculpture.";
     return ss.str();
 }
+
+void Sculpture::place(Room *room) {
+    VoluminousExhibit::place(room);
+}

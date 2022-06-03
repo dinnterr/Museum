@@ -10,6 +10,8 @@ public:
     Technics(const std::string& country, int year, double width, double length, double height, const std::string& material);
     std::string Info() const override;
 
+    void place(Room* room) override;
+
 private:
     std::string m_material;
 };
