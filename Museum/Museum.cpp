@@ -28,7 +28,7 @@ void Museum::addExhibit(Exhibit *exhibit) {
     m_exhibits.push_back(exhibit);
 }
 
-void Museum::removeExhibit(Exhibit* exhibit) {
+/*void Museum::removeExhibit(Exhibit* exhibit) {
     if (find(m_exhibits.begin(), m_exhibits.end(), exhibit->getName()) > m_rooms.size() || find(m_exhibits.begin(), m_exhibits.end(), exhibit->getName()) <= 0)
     {
         throw std::invalid_argument("Exhibit does not exist.");
@@ -37,7 +37,7 @@ void Museum::removeExhibit(Exhibit* exhibit) {
     {
         m_exhibits.erase(m_exhibits.begin() + find(m_exhibits.begin(), m_exhibits.end(), exhibit->getName()) - 1);
     }
-}
+}*/
 
 
 void Museum::printExhibits() const
@@ -49,8 +49,18 @@ void Museum::printExhibits() const
     }
 }
 
+template <class InputIterator, class UnaryPredicate>
+InputIterator find_if (InputIterator begin, InputIterator end, UnaryPredicate pred) ;
+
 void Museum::place(Exhibit *exhibit, Room *room) {
     exhibit->place(room);
+
+    std::string sname = exhibit->getName();
+    auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(), [&sname](const Exhibit& obj){return obj.getName() == sname;});
+
+    if (it != m_exhibits.end()){
+        m_exhibits.push_back(exhibit);
+    }
 }
 
 void Museum::place(Picture *picture, Room *room) {
@@ -59,4 +69,16 @@ void Museum::place(Picture *picture, Room *room) {
 
 void Museum::place(VoluminousExhibit *v_exhibit, Room *room) {
     v_exhibit->place(room);
+}
+
+void Museum::place(Sculpture *sculpture, Room *room) {
+    sculpture->place(room);
+}
+
+void Museum::place(Technics *technics, Room *room) {
+    technics->place(room);
+}
+
+void Museum::place(HouseholdItem *householditem, Room *room) {
+    householditem->place(room);
 }

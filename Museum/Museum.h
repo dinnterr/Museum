@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <algorithm>
 #include "Rooms/Room.h"
 #include "Rooms/Windows.h"
 #include "Rooms/Doorway.h"
@@ -23,11 +24,14 @@ public:
     void removeRoom (int pos);
 
     void addExhibit (Exhibit* exhibit);
-    void removeExhibit (Exhibit* exhibit);
+   // void removeExhibit (Exhibit* exhibit);
 
     void place(Exhibit* exhibit, Room* room);
     void place(Picture* picture, Room* room);
     void place(VoluminousExhibit* v_exhibit, Room* room);
+    void place (Sculpture* sculpture, Room* room);
+    void place (Technics* technics, Room* room);
+    void place (HouseholdItem* householditem, Room* room);
 
     void printExhibits() const;
 
