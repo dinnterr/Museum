@@ -28,16 +28,17 @@ void Museum::addExhibit(Exhibit *exhibit) {
     m_exhibits.push_back(exhibit);
 }
 
-/*void Museum::removeExhibit(Exhibit* exhibit) {
-    if (find(m_exhibits.begin(), m_exhibits.end(), exhibit->getName()) > m_rooms.size() || find(m_exhibits.begin(), m_exhibits.end(), exhibit->getName()) <= 0)
-    {
-        throw std::invalid_argument("Exhibit does not exist.");
+void Museum::removeExhibit(Exhibit* exhibit) {
+    std::string sname = exhibit->getName();
+    auto isExist =  [&sname](const Exhibit& obj){return obj.getName() == sname;};
+    auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(),isExist);
+    if (it != m_exhibits.end()) {
+        auto newEnd = std::remove_if(m_exhibits.begin(), m_exhibits.end(), isExist});
+        m_exhibits.erase(newEnd, m_exhibits.end());
     }
     else
-    {
-        m_exhibits.erase(m_exhibits.begin() + find(m_exhibits.begin(), m_exhibits.end(), exhibit->getName()) - 1);
-    }
-}*/
+        std::cout <<"There is no such exhibit in the museum." << std::endl;
+}
 
 
 void Museum::printExhibits() const
@@ -49,16 +50,11 @@ void Museum::printExhibits() const
     }
 }
 
-template <class InputIterator, class UnaryPredicate>
-InputIterator find_if (InputIterator begin, InputIterator end, UnaryPredicate pred) ;
-
 void Museum::place(Exhibit *exhibit, Room *room) {
     exhibit->place(room);
-
     std::string sname = exhibit->getName();
     auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(), [&sname](const Exhibit& obj){return obj.getName() == sname;});
-
-    if (it != m_exhibits.end()){
+    if (it == m_exhibits.end()){
         m_exhibits.push_back(exhibit);
     }
 }
@@ -79,6 +75,6 @@ void Museum::place(Technics *technics, Room *room) {
     technics->place(room);
 }
 
-void Museum::place(HouseholdItem *householditem, Room *room) {
-    householditem->place(room);
+void Museum::place(HouseholdItem *householdItem, Room *room) {
+    householdItem->place(room);
 }
