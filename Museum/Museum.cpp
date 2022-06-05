@@ -35,23 +35,18 @@ void Museum::addExhibit(Exhibit *exhibit) {
     m_exhibits.push_back(exhibit);
 }
 
-void Museum::removeExhibit(Exhibit* exhibit) {
+void Museum::removeExhibitFromRoom(Exhibit *exhibit) {
+    exhibit->place(nullptr);
+}
+
+void Museum::deleteExhibitFromMuseum(Exhibit* exhibit) {
     auto it = std::find(m_exhibits.begin(), m_exhibits.end(), exhibit);
     if (it != m_exhibits.end()) {
         m_exhibits.erase(it);
     }
 }
 
-void Museum::printExhibits() const
-{
-    int i = 1;
-    for (const auto& exhibit : m_exhibits)
-    {
-        std::cout << i++ << ' ' << std::setprecision(2) << exhibit->Info() << std::endl;
-    }
-}
-
-void Museum::place(Exhibit *exhibit, Room *room) {
+void Museum::placeExhibit(Exhibit *exhibit, Room *room) {
     exhibit->place(room);
     auto it = std::find(m_exhibits.begin(), m_exhibits.end(), exhibit);
     if (it == m_exhibits.end()) {
@@ -59,42 +54,52 @@ void Museum::place(Exhibit *exhibit, Room *room) {
     }
 }
 
-void Museum::place(Picture *picture, Room *room) {
-    picture->place(room);
-    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), picture);
-    if (it == m_exhibits.end()) {
-        m_exhibits.push_back(picture);
+void Museum::printExhibits() const{
+    int i = 1;
+    for (const auto& exhibit : m_exhibits)
+    {
+        std::cout << i++ << ' ' << std::setprecision(2) << exhibit->Info() << std::endl;
     }
 }
 
-void Museum::place(VoluminousExhibit *v_exhibit, Room *room) {
-    v_exhibit->place(room);
-    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), v_exhibit);
-    if (it == m_exhibits.end()) {
-        m_exhibits.push_back(v_exhibit);
+void Museum::printRooms() const {
+    int i = 1;
+    for (const auto& room : m_rooms)
+    {
+        std::cout << i++ << ' ' << std::setprecision(2) << room->Info() << std::endl;
     }
 }
 
-void Museum::place(Sculpture *sculpture, Room *room) {
-    sculpture->place(room);
-    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), sculpture);
-    if (it == m_exhibits.end()) {
-        m_exhibits.push_back(sculpture);
+Room *Museum::getRoom(int pos) const {
+    return m_rooms[pos-1];
+}
+
+Exhibit *Museum::getExhibit(const std::string &name) const {
+    auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(), [name](Exhibit* exhibit) { return (exhibit->getName() == name); });
+    if (it != m_exhibits.end())
+    {
+        return *it;
+    }
+    else
+        return nullptr;
+}
+
+Exhibit *Museum::getExhibit(Exhibit *exhibit) const {
+    auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(), [exhibit](Exhibit* ex) { return (ex->getName() == exhibit->getName()); });
+    if (it != m_exhibits.end())
+    {
+        return *it;
+    }
+    else
+    {
+        return nullptr;
     }
 }
 
-void Museum::place(Technics *technics, Room *room) {
-    technics->place(room);
-    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), technics);
-    if (it == m_exhibits.end()) {
-        m_exhibits.push_back(technics);
-    }
+bool Museum::isEmpthyRooms() const {
+    return m_rooms.empty();
 }
 
-void Museum::place(HouseholdItem *householdItem, Room *room) {
-    householdItem->place(room);
-    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), householdItem);
-    if (it == m_exhibits.end()) {
-        m_exhibits.push_back(householdItem);
-    }
+bool Museum::isEmpthyExhibits() const {
+    return  m_exhibits.empty();
 }

@@ -25,16 +25,22 @@ public:
     void removeRoom (Room* room);
 
     void addExhibit (Exhibit* exhibit);
-    void removeExhibit (Exhibit* exhibit);
-
-    void place(Exhibit* exhibit, Room* room);
-    void place(Picture* picture, Room* room);
-    void place(VoluminousExhibit* v_exhibit, Room* room);
-    void place (Sculpture* sculpture, Room* room);
-    void place (Technics* technics, Room* room);
-    void place (HouseholdItem* householditem, Room* room);
+    void removeExhibitFromRoom (Exhibit* exhibit);
+    void deleteExhibitFromMuseum (Exhibit* exhibit);
+    void placeExhibit(Exhibit* exhibit, Room* room);
 
     void printExhibits() const;
+    void printRooms () const;
+
+    Room* getRoom (int pos) const;
+    Exhibit* getExhibit (const std::string& name) const;
+    Exhibit* getExhibit (Exhibit* exhibit) const;
+
+    bool isEmpthyRooms () const;
+    bool isEmpthyExhibits () const;
+
+    int getRoomsAmount () const {return m_rooms.size();}
+    int getExhibitsAmount () const {return m_exhibits.size();}
 
 private:
     std::vector <Room*> m_rooms;
