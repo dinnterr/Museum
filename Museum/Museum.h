@@ -22,6 +22,7 @@ public:
 
     void addRoom (Room* room);
     void removeRoom (int pos);
+    void removeRoom (Room* room);
 
     void addExhibit (Exhibit* exhibit);
     void removeExhibit (Exhibit* exhibit);

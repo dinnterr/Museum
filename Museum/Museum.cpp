@@ -24,22 +24,23 @@ void Museum::removeRoom(int pos) {
     }
 }
 
+void Museum::removeRoom(Room *room) {
+    auto it = std::find(m_rooms.begin(), m_rooms.end(), room);
+    if (it != m_rooms.end()) {
+        m_rooms.erase(it);
+    }
+}
+
 void Museum::addExhibit(Exhibit *exhibit) {
     m_exhibits.push_back(exhibit);
 }
 
 void Museum::removeExhibit(Exhibit* exhibit) {
-    std::string sname = exhibit->getName();
-    auto isExist =  [&sname](const Exhibit& obj){return obj.getName() == sname;};
-    auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(),isExist);
+    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), exhibit);
     if (it != m_exhibits.end()) {
-        auto newEnd = std::remove_if(m_exhibits.begin(), m_exhibits.end(), isExist});
-        m_exhibits.erase(newEnd, m_exhibits.end());
+        m_exhibits.erase(it);
     }
-    else
-        std::cout <<"There is no such exhibit in the museum." << std::endl;
 }
-
 
 void Museum::printExhibits() const
 {
@@ -52,29 +53,48 @@ void Museum::printExhibits() const
 
 void Museum::place(Exhibit *exhibit, Room *room) {
     exhibit->place(room);
-    std::string sname = exhibit->getName();
-    auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(), [&sname](const Exhibit& obj){return obj.getName() == sname;});
-    if (it == m_exhibits.end()){
+    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), exhibit);
+    if (it == m_exhibits.end()) {
         m_exhibits.push_back(exhibit);
     }
 }
 
 void Museum::place(Picture *picture, Room *room) {
     picture->place(room);
+    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), picture);
+    if (it == m_exhibits.end()) {
+        m_exhibits.push_back(picture);
+    }
 }
 
 void Museum::place(VoluminousExhibit *v_exhibit, Room *room) {
     v_exhibit->place(room);
+    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), v_exhibit);
+    if (it == m_exhibits.end()) {
+        m_exhibits.push_back(v_exhibit);
+    }
 }
 
 void Museum::place(Sculpture *sculpture, Room *room) {
     sculpture->place(room);
+    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), sculpture);
+    if (it == m_exhibits.end()) {
+        m_exhibits.push_back(sculpture);
+    }
 }
 
 void Museum::place(Technics *technics, Room *room) {
     technics->place(room);
+    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), technics);
+    if (it == m_exhibits.end()) {
+        m_exhibits.push_back(technics);
+    }
 }
 
 void Museum::place(HouseholdItem *householdItem, Room *room) {
     householdItem->place(room);
+    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), householdItem);
+    if (it == m_exhibits.end()) {
+        m_exhibits.push_back(householdItem);
+    }
 }
