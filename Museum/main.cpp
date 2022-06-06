@@ -22,8 +22,7 @@ int main() {
     cout << "Hello! You are using a museum creation program." << endl << endl;
     cout << "Press Enter to start!" << endl;
     cin.get();
-    while (true) {
-        try {
+    try {
             std::vector<Windows> windows0;
             std::vector<Doorway> doorways0;
             cout << "Create a first room of the museum." << endl;
@@ -592,6 +591,5 @@ int main() {
         catch (const exception &ex) {
             cerr << ex.what() << endl;
         }
-    }
     return 0;
 }
