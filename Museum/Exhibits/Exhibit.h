@@ -14,6 +14,7 @@ public:
     Exhibit(const std::string& name, const std::string& country, int year);
 
     virtual std::string getName () const {return m_name;}
+    Room* getRoom () const {return m_room;}
 
     void setAuthor (const std::string& author){m_author = author;}
     void setCountry (const std::string& country){m_country = country;}
