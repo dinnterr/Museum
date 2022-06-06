@@ -3,7 +3,7 @@
 
 #include "VoluminousExhibit.h"
 
-enum Posibility{
+enum Possibility{
     usable,
     notUsable
 };
@@ -11,15 +11,15 @@ enum Posibility{
 class HouseholdItem : public  VoluminousExhibit{
 public:
     HouseholdItem(const std::string& author, const std::string& name, const std::string& country, int year, double width, double length,
-                  double height, int posibilityOfUsing);
+                  double height, int possibilityOfUsing);
     HouseholdItem(const std::string& name, const std::string& country, int year, double width, double length,
-                  double height, int posibilityOfUsing);
+                  double height, int possibilityOfUsing);
     std::string Info() const override;
 
     void place(Room* room) override;
 
 private:
-    std::string m_posibilityOfUsing;
+    std::string m_possibilityOfUsing;
 };
 
 #endif //HOUSEHOLDITEM_H

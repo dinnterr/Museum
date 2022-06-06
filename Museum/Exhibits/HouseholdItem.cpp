@@ -1,31 +1,31 @@
 #include "HouseholdItem.h"
 
-HouseholdItem::HouseholdItem(const std::string& author, const std::string& name, const std::string& country, int year, double width, double length, double height, int posibilityOfUsing):
+HouseholdItem::HouseholdItem(const std::string& author, const std::string& name, const std::string& country, int year, double width, double length, double height, int possibilityOfUsing):
         VoluminousExhibit(author, name, country, year, width, length, height){
-    if(posibilityOfUsing < 0 || posibilityOfUsing > 1){
+    if(possibilityOfUsing < 0 || possibilityOfUsing > 1){
         throw std::invalid_argument("Wrong number.");
     }
-    switch (posibilityOfUsing) {
+    switch (possibilityOfUsing) {
         case usable: {
-            m_posibilityOfUsing = "Usable item.";
+            m_possibilityOfUsing = "Usable item.";
         }
         case notUsable:{
-            m_posibilityOfUsing = "Not usable item.";
+            m_possibilityOfUsing = "Not usable item.";
         }
     }
 }
 
-HouseholdItem::HouseholdItem(const std::string& name, const std::string& country, int year, double width, double length, double height, int posibilityOfUsing):
+HouseholdItem::HouseholdItem(const std::string& name, const std::string& country, int year, double width, double length, double height, int possibilityOfUsing):
         VoluminousExhibit(name, country, year, width, length, height){
-    if(posibilityOfUsing < 0 || posibilityOfUsing > 1){
+    if(possibilityOfUsing < 0 || possibilityOfUsing > 1){
         throw std::invalid_argument("Wrong number.");
     }
-    switch (posibilityOfUsing) {
+    switch (possibilityOfUsing) {
         case usable: {
-            m_posibilityOfUsing = "Usable item.";
+            m_possibilityOfUsing = "Usable item.";
         }
         case notUsable:{
-            m_posibilityOfUsing = "Not usable item.";
+            m_possibilityOfUsing = "Not usable item.";
         }
     }
 }
