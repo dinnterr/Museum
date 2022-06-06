@@ -22,7 +22,7 @@ public:
 
     void addRoom (Room* room);
     void removeRoom (int pos);
-    void removeRoom (Room* room);
+    //void removeRoom (Room* room);
 
     void addExhibit (Exhibit* exhibit);
     void removeExhibitFromRoom (Exhibit* exhibit);
@@ -36,8 +36,10 @@ public:
     Exhibit* getExhibit (const std::string& name) const;
     Exhibit* getExhibit (Exhibit* exhibit) const;
 
-    bool isEmpthyRooms () const;
-    bool isEmpthyExhibits () const;
+    bool isOnlyOneRoom () const;
+    bool isEmptyExhibits () const;
+    bool isOneExhibitInRoom () const;
+    bool isEmptyRooms () const;
 
     int getRoomsAmount () const {return m_rooms.size();}
     int getExhibitsAmount () const {return m_exhibits.size();}
