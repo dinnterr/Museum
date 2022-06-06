@@ -3,6 +3,9 @@
 Technics::Technics(const std::string& author, const std::string& name, const std::string& country, int year,
                    double width, double length, double height, int material) :
         VoluminousExhibit(author, name, country, year, width, length, height){
+    if (material < 1 || material > 6){
+        throw std::invalid_argument("Wrong number.");
+    }
     switch(material){
         case 1:{
             m_material = "Stone";
@@ -29,6 +32,9 @@ Technics::Technics(const std::string& author, const std::string& name, const std
 Technics::Technics(const std::string& name, const std::string& country, int year, double width, double length,
                    double height, int material) :
         VoluminousExhibit(name, country, year, width, length, height){
+    if (material < 1 || material > 6){
+        throw std::invalid_argument("Wrong number.");
+    }
     switch(material){
         case 1:{
             m_material = "Stone";
