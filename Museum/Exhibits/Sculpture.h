@@ -3,7 +3,7 @@
 
 #include "VoluminousExhibit.h"
 
-enum class Type{
+enum Type{
     bust = 1,
     sculptureOfSmallForms,
     sculpturalGroup,

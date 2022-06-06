@@ -7,22 +7,22 @@ Technics::Technics(const std::string& author, const std::string& name, const std
         throw std::invalid_argument("Wrong number.");
     }
     switch(material){
-        case 1:{
+        case stone:{
             m_material = "Stone.";
         }
-        case 2:{
+        case iron:{
             m_material = "Iron.";
         }
-        case 3: {
+        case aluminum: {
             m_material = "Aliminium.";
         }
-        case 4:{
+        case plastic:{
             m_material = "Plastic.";
         }
-        case 5:{
+        case alloy:{
             m_material = "Alloy.";
         }
-        case 6:{
+        case rubber:{
             m_material = "Rubber.";
         }
     }
@@ -36,22 +36,22 @@ Technics::Technics(const std::string& name, const std::string& country, int year
         throw std::invalid_argument("Wrong number.");
     }
     switch(material){
-        case 1:{
+        case stone:{
             m_material = "Stone.";
         }
-        case 2:{
+        case iron:{
             m_material = "Iron.";
         }
-        case 3: {
+        case aluminum: {
             m_material = "Aliminium.";
         }
-        case 4:{
+        case plastic:{
             m_material = "Plastic.";
         }
-        case 5:{
+        case alloy:{
             m_material = "Alloy.";
         }
-        case 6:{
+        case rubber:{
             m_material = "Rubber.";
         }
     }

@@ -3,7 +3,7 @@
 
 #include "VoluminousExhibit.h"
 
-enum class Material {
+enum Material {
     stone = 1, //камень
     iron,      //железо
     aluminum,  //алюминий

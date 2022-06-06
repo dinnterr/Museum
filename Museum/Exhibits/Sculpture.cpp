@@ -7,22 +7,22 @@ VoluminousExhibit (author, name, country, year, width, length, height){
         throw std::invalid_argument("Wrong number.");
     }
     switch (type) {
-        case 1:{
+        case bust:{
             m_type = "Bust.";
         }
-        case 2:{
+        case sculptureOfSmallForms:{
             m_type = "Sculpture of small forms.";
         }
-        case 3:{
+        case sculpturalGroup:{
             m_type = "Sculptural group.";
         }
-        case 4:{
+        case statuette:{
             m_type = "Statuette.";
         }
-        case 5:{
+        case statue:{
             m_type = "Statue.";
         }
-        case 6:{
+        case torso:{
             m_type = "Torso.";
         }
     }
@@ -35,22 +35,22 @@ Sculpture::Sculpture(const std::string& name, const std::string& country, int ye
         throw std::invalid_argument("Wrong number.");
     }
     switch (type) {
-        case 1:{
+        case bust:{
             m_type = "Bust.";
         }
-        case 2:{
+        case sculptureOfSmallForms:{
             m_type = "Sculpture of small forms.";
         }
-        case 3:{
+        case sculpturalGroup:{
             m_type = "Sculptural group.";
         }
-        case 4:{
+        case statuette:{
             m_type = "Statuette.";
         }
-        case 5:{
+        case statue:{
             m_type = "Statue.";
         }
-        case 6:{
+        case torso:{
             m_type = "Torso.";
         }
     }
