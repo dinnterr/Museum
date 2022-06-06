@@ -57,10 +57,14 @@ int main() {
             cout << "2. Add exhibit." << endl;
             int n;
             cin >> n;
+            while (n < 1 || n > 2){
+                cout << "Wrong number. Try again." << endl;
+                cin >> n;
+            }
             cout << endl;
             switch (n) {
                 case 1: //Add room
-                {
+                {addRoom:
                     std::vector<Windows> windows;
                     std::vector<Doorway> doorways;
                     int number_of_doorways, number_of_windows;
@@ -89,12 +93,16 @@ int main() {
                     break;
                 }
                 case 2: //Add exhibit
-                {
+                {addExhibit:
                     cout << "Is the author known?" << endl;
                     cout << "1. Yes." << endl;
                     cout << "2. No." << endl;
                     int n2;
                     cin >> n2;
+                    while (n < 1 || n > 2){
+                        cout << "Wrong number. Try again." << endl;
+                        cin >> n;
+                    }
                     cout << endl;
                     switch (n2) {
                         case 1: //Witn author
@@ -108,6 +116,10 @@ int main() {
                             cout << "6. Household item." << endl;
                             int n3;
                             cin >> n3;
+                            while (n < 1 || n > 6){
+                                cout << "Wrong number. Try again." << endl;
+                                cin >> n;
+                            }
                             cout << endl;
                             switch (n3) {
                                 case 1: //simple exhibit
@@ -320,6 +332,10 @@ int main() {
                             cout << "6. Household item." << endl;
                             int n3;
                             cin >> n3;
+                            while (n < 1 || n > 6){
+                                cout << "Wrong number. Try again." << endl;
+                                cin >> n;
+                            }
                             cout << endl;
                             switch (n3) {
                                 case 1: //simple exhibit
@@ -501,6 +517,75 @@ int main() {
                         }
                     }
                     break;
+                }
+            }
+            for (;;) {
+                cout << "Now make your choice what do you want to do next." << endl;
+                cout << "1. Add room." << endl;
+                cout << "2. Remove room." << endl;
+                cout << "3. Add exhibit." << endl;
+                cout << "4. Place tne exhibit in the room." << endl;
+                cout << "5. Remove exhibit from room." << endl;
+                cout << "6. Remove exhibit from museum." << endl;
+                cout << "7. Print exhibits." << endl;
+                cout << "8. Print rooms." << endl;
+                int n4;
+                cin >> n4;
+                while (n < 1 || n > 8){
+                    cout << "Wrong number. Try again." << endl;
+                    cin >> n;
+                }
+                cout << endl;
+                if (n4 == 1) {
+                    goto addRoom;
+                }
+                if (n4 == 3){
+                    goto addExhibit;
+                }
+                if (n4 == 2 && museum.isOnlyOneRoom()){
+                    cout << "You cannot remove the room. There is only one room in museum." << endl;
+                    cout << "Choose which room you want to delete (the room number):" << endl;
+                    continue;
+                }
+                if (n4 == 4 && museum.isEmptyExhibits()){
+                    cout << "You cannot place an exhibit. There are no exhibits in the museum. First add at least one." << endl;
+                    continue;
+                }
+                if (n4 == 5 && museum.isOneExhibitInRoom()){
+                    cout << "There are no exhibits in rooms. First place exhibits in rooms." << endl;
+                    continue;
+                }
+                if (n4 == 6 && museum.isEmptyExhibits()){
+                    cout << "You cannot delete an exhibit from museum. There are no exhibits in the museum. First add at least one." << endl;
+                    continue;
+                }
+                if (n4 == 7 && museum.isEmptyExhibits()){
+                    cout << "There are no exhibits in the museum. First add at least one." << endl;
+                    continue;
+                }
+                if (n4 == 8 && museum.isEmptyRooms()){
+                    cout << "There are no rooms in the museum. First add at least one." << endl;
+                    continue;
+                }
+
+
+
+
+                cout << "Do you want to exit the program or continue the selection?" << endl;
+                cout << "0. Exit." << endl;
+                cout << "1. Back to selection." << endl;
+                int e;
+                cin >> e;
+                while (n < 0 || n > 1){
+                    cout << "Wrong number. Try again." << endl;
+                    cin >> n;
+                }
+                if (e == 0){
+                    cout << "You have chosen to exit. Bye!" << endl;
+                    return 0;
+                }
+                if(e == 1){
+                    continue;
                 }
             }
         }
