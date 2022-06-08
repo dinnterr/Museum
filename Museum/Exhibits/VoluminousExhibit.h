@@ -12,7 +12,6 @@ public:
     void setLength (double length) {m_length = length;}
     void setHeigth (double height){m_height = height;}
 
-    double Area () const;
     std::string Info() const override;
 
     void place(Room* room) override;

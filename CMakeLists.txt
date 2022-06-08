@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.20)
 project(museum)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_C_COMPILER C:\\cygwin64\\bin\\gcc.exe)
-set(CMAKE_CXX_COMPILER C:\\cygwin64\\bin\\c++.exe)
 
 add_executable(museum Museum/main.cpp Museum/Rooms/Room.cpp
         Museum/Rooms/Room.h Museum/Exhibits/Exhibit.cpp Museum/Exhibits/Exhibit.h

@@ -6,6 +6,8 @@
 #include <stdexcept>
 #include <utility>
 #include <vector>
+#include <string>
+#include <sstream>
 
 class Windows{
 public:
@@ -15,6 +17,8 @@ public:
     void setNumberOfWindows (int numberOfWindows) {m_numberOfWindows = numberOfWindows;}
 
     double squareOfWindows () const;
+
+    std::string Info() const;
 
 private:
     int m_numberOfWindows;

@@ -16,10 +16,16 @@ m_country(country), m_year(year), m_room(nullptr){
 
 std::string Exhibit::Info() const{
     std::stringstream ss;
-
-    ss << "You have created an exhibit of museum."
-       << "\nAuthor: "<< m_author << ". " << "Country: " << m_country << '.'
-       << "\nYear: " << m_year << '.';
+    if (m_room != nullptr) {
+        ss << "Exhibit: " << m_name << '.'
+           << "\nAuthor: " << m_author << ". " << "Country: " << m_country << '.'
+           << "\nYear: " << m_year << '.' << "\nIt placed in: " << m_room->Info();
+    }
+    else {
+        ss << "Exhibit: " << m_name << '.'
+           << "\nAuthor: " << m_author << ". " << "Country: " << m_country << '.'
+           << "\nYear: " << m_year << '.' << "\nIt is not placed in the room.";
+    }
     return ss.str();
 }
 

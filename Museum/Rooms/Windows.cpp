@@ -15,3 +15,9 @@ double Windows::squareOfWindows() const {
         return m_height*m_width*m_numberOfWindows;
     }
 }
+
+std::string Windows::Info() const {
+    std::stringstream ss;
+    ss << "Number of windows: " << m_numberOfWindows << " (each 1.76m * 1.42m)";
+    return ss.str();
+}

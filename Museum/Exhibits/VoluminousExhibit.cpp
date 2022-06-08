@@ -18,18 +18,17 @@ VoluminousExhibit::VoluminousExhibit(const std::string& name, const std::string&
 
 std::string VoluminousExhibit::Info() const {
     std::stringstream ss;
-    ss << Exhibit::Info() << "\nIt`s a voluminous exhibit. Size of voluminous exhibit: " << m_width << '*' << m_length << '*' << m_height << '.';
+    ss << Exhibit::Info() << "\nIt`s a voluminous exhibit. Size: " << m_width << '*' << m_length << '*' << m_height << '.';
     return ss.str();
 }
 
-double VoluminousExhibit::Area() const {
-    return m_width*m_length;
+void VoluminousExhibit::place(Room *room) {
+    if(m_width*m_length <= room->getFloorArea() && m_height < room->getHeight()) {
+        Exhibit::place(room);
+        double area = (room->getFloorArea() - m_width*m_length);
+        room->setFloorArea(area);
+    }
+    else
+        throw std::invalid_argument("Cannot place in the room. Voluminous exhibit is too big.");
 }
 
-void VoluminousExhibit::place(Room *room) {
-    if(Area() <= room->getFloorArea() && m_height < room->getHeight()) {
-        Exhibit::place(room);
-    }
-    double area = (room->getFloorArea() - Area());
-    room->setFloorArea(area);
-}

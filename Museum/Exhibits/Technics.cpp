@@ -59,7 +59,7 @@ Technics::Technics(const std::string& name, const std::string& country, int year
 
 std::string Technics::Info() const{
     std::stringstream ss;
-    ss << VoluminousExhibit::Info() << "\nIt is a technics.\nMaterial: " << m_material << '.';
+    ss << VoluminousExhibit::Info() << "\nIt is a technics.\nIts material: " << m_material;
     return ss.str();
 }
 

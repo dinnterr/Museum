@@ -93,10 +93,22 @@ int main() {
             }
         }
         if (n == 2){ //Remove room
-
-
-
-
+            cout << "You have chosen \"Remove room\"." << endl << endl;
+            cout << "Rooms of museum" << endl;
+            museum.printRooms();
+            cout << endl;
+            cout << "Choose room that you want to delete (enter a number)." << endl;
+            int d;
+            cin >> d;
+            while (d < 0 || d > museum.getRoomsAmount()){
+                cout << "Wrong number. Try again." << endl;
+                cin >> d;
+            }
+            cout << endl;
+            museum.removeRoom(d);
+            cout << "Now museum has such rooms:" << endl;
+            museum.printRooms();
+            cout << endl;
         }
         if (n == 3) { //Add exhibit
             try {
@@ -113,7 +125,8 @@ int main() {
                 switch (n2) {
                     case 1: //With author
                     {
-                        cout << "Okay. Now select an exhibit type." << endl;
+                        cout << "You have chosen \"Add exhibit\"." << endl << endl;
+                        cout << "Now select an exhibit type." << endl;
                         cout << "1. Simple exhibit (Author, name, country, year)." << endl;
                         cout << "2. Picture." << endl;
                         cout << "3. Voluminous exhibit (generalized)." << endl;
@@ -326,7 +339,8 @@ int main() {
                     }
                     case 2: //Unknown author
                     {
-                        cout << "Okay. Now select an exhibit type." << endl;
+                        cout << "You have chosen \"Add exhibit\"." << endl << endl;
+                        cout << "Now select an exhibit type." << endl;
                         cout << "1. Simple exhibit (Name, country, year)." << endl;
                         cout << "2. Picture." << endl;
                         cout << "3. Voluminous exhibit (generalized)." << endl;
@@ -524,19 +538,69 @@ int main() {
             }
         }
         if (n == 4){ //Place tne exhibit in the room
-            cout << "Now your museum has such exhibits:" << endl << endl;
+            cout << "You have chosen \"Place tne exhibit in the room\"." << endl << endl;
+            cout << "Your museum has such exhibits:" << endl << endl;
             museum.printExhibits();
+            cout << "Now select the exhibit you want to place (enter number)." << endl;
+            int p;
+            cin >> p;
+            while (p < 0 || p > museum.getExhibitsAmount()){
+                cout << "Wrong number. Try again." << endl;
+                cin >> p;
+            }
             cout << endl;
             cout << "And such rooms:" << endl << endl;
             museum.printRooms();
+            cout << "Now select the room in which you want to place exhibit." << endl;
+            int p2;
+            cin >> p2;
+            while (p2 < 0 || p2 > museum.getRoomsAmount()){
+                cout << "Wrong number. Try again." << endl;
+                cin >> p;
+            }
+            try {
+                museum.placeExhibit(museum.getExhibit(p), museum.getRoom(p2));
+            }
+            catch (const exception& ex){
+                cerr << ex.what() << endl;
+            }
             cout << endl;
-            cout << "Now select the exhibit and the room in which you want to place it." << endl;
+        }
+        if (n == 5){ //Remove exhibit from room
+            cout << "You have chosen \"Remove exhibit from room\"." << endl << endl;
+            cout << "There are exhibits of your museum:" << endl;
+            museum.printExhibits();
+            cout << endl;
+            cout << "Make your choice (enter number)." << endl;
+            int r;
+            cin >> r;
+            while (r < 0 || r > museum.getExhibitsAmount()){
+                cout << "Wrong number. Try again." << endl;
+                cin >> r;
+            }
+            museum.removeExhibitFromRoom(museum.getExhibit(r));
+            cout << endl;
+
 
         }
+        if (n == 6){ //Remove exhibit from museum
+            cout << "You have chosen \"Remove exhibit from museum\"." << endl << endl;
+            cout << "There are exhibits of your museum:" << endl;
+            museum.printExhibits();
+            cout << endl;
+            cout << "Make your choice (enter number)." << endl;
+            int r;
+            cin >> r;
+            while (r < 0 || r > museum.getExhibitsAmount()){
+                cout << "Wrong number. Try again." << endl;
+                cin >> r;
+            }
+            museum.deleteExhibitFromMuseum(museum.getExhibit(r));
+            cout << endl;
 
 
 
-
+        }
         if(n == 7){ //Print exhibits
             cout << "Exhibits of your museum: " << endl;
             museum.printExhibits();
@@ -547,12 +611,6 @@ int main() {
             museum.printRooms();
             cout << endl;
         }
-
-
-
-
-
-
         cout << "Do you want to exit the program or continue the selection?" << endl;
         cout << "0. Exit." << endl;
         cout << "1. Back to selection." << endl;

@@ -11,10 +11,9 @@ m_windows(Windows(numberOfWindows)), m_doorways(Doorway(numberOfDoorWays)), m_fl
 
 std::string Room::Info () const{
     std::stringstream ss;
-
-    ss << "You have created a room of size "
-            << m_width << '*' << m_length << '*'
-            << m_height << "." << "\n" << m_doorways.Info();
+    ss << "Room ( "<< m_width << '*' << m_length << '*'
+            << m_height << ")." << "\n" << m_doorways.Info() << "\n" << m_windows.Info()
+            << "\nUsable wall area: " << m_usableWallArea << '.';
     return ss.str();
 }
 

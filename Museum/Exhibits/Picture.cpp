@@ -16,18 +16,16 @@ Picture::Picture (const std::string& name, const std::string& country, int year,
 
 std::string Picture::Info() const{
     std::stringstream ss;
-    ss << Exhibit::Info() << "\nIt`s a picture. Size of picture: " << m_width << '*' << m_height << '.';
+    ss << Exhibit::Info() << "\nIt`s a picture. Size: " << m_width << '*' << m_height << '.';
     return ss.str();
 }
 
-double Picture::Area() const {
-    return m_height*m_width;
-}
-
 void Picture::place(Room *room) {
-    if(Area() <= room->getUsableWallArea()) {
+    if(m_height*m_width <= room->getUsableWallArea()) {
         Exhibit::place(room);
+        double area = (room->getUsableWallArea() - m_height*m_width);
+        room->setUsableWallArea(area);
     }
-    double area = (room->getUsableWallArea() - Area());
-    room->setUsableWallArea(area);
+    else
+        throw std::invalid_argument("Cannot place in the room. Picture is too big.");
 }

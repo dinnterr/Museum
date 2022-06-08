@@ -32,7 +32,8 @@ HouseholdItem::HouseholdItem(const std::string& name, const std::string& country
 
 std::string HouseholdItem::Info() const{
     std::stringstream ss;
-    ss << VoluminousExhibit::Info() << "\nIt is a household item.";
+    ss << VoluminousExhibit::Info() << "\nIt is a household item. Its possibility of using: "
+    << m_possibilityOfUsing;
     return ss.str();
 }
 

@@ -58,7 +58,7 @@ Sculpture::Sculpture(const std::string& name, const std::string& country, int ye
 
 std::string Sculpture::Info() const{
     std::stringstream ss;
-    ss << VoluminousExhibit::Info() << "\nIt is a sculpture.";
+    ss << VoluminousExhibit::Info() << "\nIt is a sculpture. Its type: " << m_type;
     return ss.str();
 }
 
