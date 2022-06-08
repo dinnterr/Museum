@@ -32,7 +32,10 @@ void Museum::removeRoom(int pos) {
 }*/
 
 void Museum::addExhibit(Exhibit *exhibit) {
-    m_exhibits.push_back(exhibit);
+    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), exhibit);
+    if (it == m_exhibits.end()) {
+        m_exhibits.push_back(exhibit);
+    }
 }
 
 void Museum::removeExhibitFromRoom(Exhibit *exhibit) {
@@ -106,7 +109,7 @@ bool Museum::isEmptyExhibits() const {
 }
 
 bool Museum::isOneExhibitInRoom() const {
-    auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(), [](const Exhibit& e){return e.getRoom() != nullptr;});
+    auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(), [](Exhibit* e){return e->getRoom() != nullptr;});
             if(it == m_exhibits.end()){
                 return false;
             }
