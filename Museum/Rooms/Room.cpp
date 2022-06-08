@@ -1,6 +1,6 @@
 #include "Room.h"
 
-Room::Room(double width, double length, double height, std::vector<Windows>& window, std::vector<Doorway>& doorway){
+Room::Room(double width, double length, double height, std::vector<Windows*>& window, std::vector<Doorway*>& doorway){
     if (usableWallArea(window, doorway) <= 0)
     {
         throw std::invalid_argument ("Cannot create a room. It does not have usable area.");
@@ -23,22 +23,22 @@ std::string Room::Info() const{
     return ss.str();
 }
 
-double Room::usableWallArea (std::vector<Windows>& w, std::vector<Doorway>& d) const{
+double Room::usableWallArea (std::vector<Windows*>& w, std::vector<Doorway*>& d) const{
     double usableArea = m_length*m_height*2 + m_width*m_height*2;
     for (auto const & window : w){
-        usableArea -= window.squareOfWindows();
+        usableArea -= window->squareOfWindows();
     }
     for (auto const & doorway : d){
-        usableArea -= doorway.squareOfDoorways();
+        usableArea -= doorway->squareOfDoorways();
     }
     return usableArea;
 }
 
-void Room::addWindow(const Windows & window) {
+void Room::addWindow(Windows * window) {
     m_windows.push_back(window);
 }
 
-void Room::addDoorway(const Doorway & doorway) {
+void Room::addDoorway(Doorway * doorway) {
     m_doorways.push_back(doorway);
 }
 
