@@ -31,7 +31,7 @@ public:
 
     double usableWallArea (std::vector<Windows*>& w, std::vector<Doorway*>& d) const;
 
-    std::string Info() const;
+    std::string Info () const;
 
 private:
     double m_width, m_length, m_height;

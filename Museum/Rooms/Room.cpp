@@ -14,12 +14,15 @@ Room::Room(double width, double length, double height, std::vector<Windows*>& wi
     m_usableWallArea = usableWallArea(window, doorway);
 }
 
-std::string Room::Info() const{
+std::string Room::Info () const{
     std::stringstream ss;
 
     ss << "You have created a room of size "
             << m_width << '*' << m_length << '*'
-            << m_height << ".";
+            << m_height << "." << std::endl;
+    for (auto m_doorway : m_doorways){
+        m_doorway->Info();
+    }
     return ss.str();
 }
 

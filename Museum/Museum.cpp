@@ -61,7 +61,7 @@ void Museum::printExhibits() const{
     int i = 1;
     for (const auto& exhibit : m_exhibits)
     {
-        std::cout << i++ << ' ' << std::setprecision(2) << exhibit->Info() << std::endl;
+        std::cout << i++ << ") " << std::setprecision(2) << exhibit->Info() << std::endl;
     }
 }
 
@@ -69,7 +69,7 @@ void Museum::printRooms() const {
     int i = 1;
     for (const auto& room : m_rooms)
     {
-        std::cout << i++ << ' ' << std::setprecision(2) << room->Info() << std::endl;
+        std::cout << i++ << ") " << std::setprecision(2) << room->Info() << std::endl;
     }
 }
 

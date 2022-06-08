@@ -6,6 +6,8 @@
 #include <stdexcept>
 #include <utility>
 #include <vector>
+#include <string>
+#include <sstream>
 
 class Doorway {
 public:
@@ -16,6 +18,8 @@ public:
     void setDimensions (std::vector <std::vector <double>> doorways) {m_doorways = std::move(doorways);}
 
     double squareOfDoorways () const;
+
+    std::string Info() const;
 
 private:
     int m_numberOfDoorways;

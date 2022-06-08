@@ -53,3 +53,14 @@ double Doorway::squareOfDoorways () const {
     }
     return square;
 }
+
+std::string Doorway::Info() const {
+    std::stringstream ss;
+    ss << "Number of doorways: " << m_numberOfDoorways << ". Their parameters:\n";
+    for (int i = 0; i < m_numberOfDoorways; i++) {
+        for (int j = 0; j < DIMENSIONS; ) {
+           ss << ++i << "height: " << m_doorways[i][j] << ", width: " << m_doorways[i][++j] << '.' << std::endl;
+        }
+    }
+    return ss.str();
+}
