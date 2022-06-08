@@ -6,6 +6,7 @@ Doorway::Doorway (int numberOfDoorways){
         throw std::invalid_argument("Number of doorways cannot be negative or equal zero.");
     }
     else{
+        m_doorways.resize(numberOfDoorways, std::vector<double>(DIMENSIONS));
         m_numberOfDoorways = numberOfDoorways;
         for (int i = 0; i < numberOfDoorways; i++) {
             m_doorways[i][0] = 2100;
@@ -19,6 +20,7 @@ Doorway::Doorway(std::vector <std::vector <double>>& doorways, int numberOfDoorw
         throw std::invalid_argument("Number of doorways cannot be negative or equal zero.");
     }
     else {
+        m_doorways.resize(numberOfDoorways, std::vector<double>(DIMENSIONS));
         m_numberOfDoorways = numberOfDoorways;
         for (int i = 0; i < numberOfDoorways; i++) {
             for (int j = 0; j < DIMENSIONS; j++) {

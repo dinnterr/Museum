@@ -9,6 +9,7 @@ Windows::Windows (int numberOfWindows){
         m_numberOfWindows = 0;
     }
     else {
+        m_windows.resize(numberOfWindows, std::vector<double>(DIMENSIONS));
         m_numberOfWindows = numberOfWindows;
         for (int i = 0; i < numberOfWindows; i++) {
             m_windows[i][0] = 1760;
@@ -22,6 +23,7 @@ Windows::Windows(int numberOfWindows, std::vector <std::vector <double>>& window
         throw std::invalid_argument("If you enter window parameters, then their number cannot be negative or equal to zero.");
     }
     else {
+        m_windows.resize(numberOfWindows, std::vector<double>(DIMENSIONS));
         m_numberOfWindows = numberOfWindows;
         for (int i = 0; i < numberOfWindows; i++) {
             for (int j = 0; j < DIMENSIONS; j++) {
