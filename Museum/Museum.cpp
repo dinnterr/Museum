@@ -54,10 +54,6 @@ void Museum::deleteExhibitFromMuseum(Exhibit* exhibit) {
 
 void Museum::placeExhibit(Exhibit *exhibit, Room *room) {
     exhibit->place(room);
-    auto it = std::find(m_exhibits.begin(), m_exhibits.end(), exhibit);
-    if (it == m_exhibits.end()) {
-        m_exhibits.push_back(exhibit);
-    }
 }
 
 void Museum::printExhibits() const{
@@ -76,8 +72,12 @@ void Museum::printRooms() const {
     }
 }
 
-Room *Museum::getRoom(int pos) const {
+Room * Museum::getRoom(int pos) const {
     return m_rooms[pos-1];
+}
+
+Exhibit * Museum::getExhibit(int pos) const {
+    return m_exhibits[pos-1];
 }
 
 Exhibit *Museum::getExhibit(const std::string &name) const {

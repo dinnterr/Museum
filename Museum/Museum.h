@@ -33,6 +33,7 @@ public:
     void printRooms () const;
 
     Room* getRoom (int pos) const;
+    Exhibit* getExhibit (int pos) const;
     Exhibit* getExhibit (const std::string& name) const;
     Exhibit* getExhibit (Exhibit* exhibit) const;
 
