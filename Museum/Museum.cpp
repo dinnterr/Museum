@@ -103,8 +103,7 @@ Exhibit *Museum::getExhibit(Exhibit *exhibit) const {
 }
 
 bool Museum::isOnlyOneRoom() const {
-    if(m_rooms.size() == 1)
-    return true;
+    return m_rooms.size() == 1;
 }
 
 bool Museum::isEmptyExhibits() const {

@@ -1,17 +1,12 @@
 #include "Room.h"
 
-Room::Room(double width, double length, double height, int numberOfWindows, int numberOfDoorWays){
+Room::Room(double width, double length, double height, int numberOfWindows, int numberOfDoorWays) : m_width(width), m_length(length), m_height(height),
+m_windows(Windows(numberOfWindows)), m_doorways(Doorway(numberOfDoorWays)), m_floorArea(width*length), m_usableWallArea(
+                usableWallArea(numberOfWindows, numberOfDoorWays)){
     if (usableWallArea(numberOfWindows, numberOfDoorWays) <= 0)
     {
         throw std::invalid_argument ("Cannot create a room. It does not have usable area.");
     }
-    m_width = width;
-    m_length = length;
-    m_height = height;
-    m_windows = Windows(numberOfWindows);
-    m_doorways = Doorway(numberOfDoorWays);
-    m_floorArea = width*length;
-    m_usableWallArea = usableWallArea(numberOfWindows, numberOfDoorWays);
 }
 
 std::string Room::Info () const{

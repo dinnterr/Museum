@@ -1,23 +1,19 @@
 #include "VoluminousExhibit.h"
 
 VoluminousExhibit::VoluminousExhibit(const std::string& author, const std::string& name, const std::string& country, int year,
-                                     double width, double length, double height) : Exhibit(author, name, country, year){
+                                     double width, double length, double height) : m_width(width), m_length(length),
+                                     m_height(height), Exhibit(author, name, country, year){
     if (width < 0 || length < 0 || height < 0){
         throw std::invalid_argument("Cannot create a voluminous exhibit! Width and/or length and/or height cannot be negative.");
     }
-    m_width = width;
-    m_length = length;
-    m_height = height;
 }
 
 VoluminousExhibit::VoluminousExhibit(const std::string& name, const std::string& country, int year,
-                                     double width, double length, double height) : Exhibit(name, country, year){
+                                     double width, double length, double height) : m_width(width), m_length(length),
+                                     m_height(height), Exhibit(name, country, year){
     if (width < 0 || length < 0 || height < 0){
         throw std::invalid_argument("Cannot create a voluminous exhibit! Width and/or length and/or height cannot be negative.");
     }
-    m_width = width;
-    m_length = length;
-    m_height = height;
 }
 
 std::string VoluminousExhibit::Info() const {

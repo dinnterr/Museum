@@ -11,16 +11,15 @@ class Windows{
 public:
     Windows();
     Windows (int numberOfWindows);
-    //Windows (int numberOfWindows, std::vector <std::vector <double>>& windows);
 
     void setNumberOfWindows (int numberOfWindows) {m_numberOfWindows = numberOfWindows;}
-    void setDimensions (std::vector <std::vector <double>> windows) {m_windows = std::move(windows);}
 
     double squareOfWindows () const;
 
 private:
     int m_numberOfWindows;
-    std::vector <std::vector <double>> m_windows;
+    double m_height = 1.76;
+    double m_width = 1.42;
 };
 
 
