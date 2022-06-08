@@ -1,9 +1,7 @@
 #include <iostream>
-#include <string>
 #include <vector>
 #include <stdexcept>
 #include <exception>
-#include <cstdlib>
 #include "Museum.h"
 #include "Rooms/Room.h"
 #include "Exhibits/Exhibit.h"
@@ -119,7 +117,7 @@ int main() {
                 }
                 cout << endl;
                 switch (n2) {
-                    case 1: //Witn author
+                    case 1: //With author
                     {
                         cout << "Okay. Now select an exhibit type." << endl;
                         cout << "1. Simple exhibit (Author, name, country, year)." << endl;
@@ -297,7 +295,7 @@ int main() {
                             case 6: //Household item
                             {
                                 string author, name, country;
-                                int year, posibilityOfUsing;
+                                int year, possibilityOfUsing;
                                 double h_width, h_height, h_length;
                                 cout << "Enter the name of the household item's author." << endl;
                                 cin >> author;
@@ -323,9 +321,8 @@ int main() {
                                 cout << "Choose the possibility of using the household item:" << endl;
                                 cout << "1. Usable item." << endl;
                                 cout << "2. Not usable item." << endl;
-                                cin >> posibilityOfUsing;
-                                exhibit = new HouseholdItem(author, name, country, year, h_width, h_length, h_height,
-                                                            posibilityOfUsing);
+                                cin >> possibilityOfUsing;
+                                exhibit = new HouseholdItem(author, name, country, year, h_width, h_length, h_height, possibilityOfUsing);
                                 museum.addExhibit(exhibit);
                                 cout << endl;
                                 break;
@@ -532,6 +529,26 @@ int main() {
             catch (const exception& ex){
                 cerr << ex.what() << endl;
             }
+        }
+        if (n == 4){ //Place tne exhibit in the room
+            cout << "Now your museum has such exhibits:" << endl << endl;
+            museum.printExhibits();
+            cout << endl;
+            cout << "And such rooms:" << endl << endl;
+            museum.printRooms();
+            cout << endl;
+            cout << "Now select the exhibit and the room in which you want to place it." << endl;
+
+        }
+
+
+
+
+
+        if(n == 8){ //Print rooms
+            cout << "Rooms of your museum: " << endl;
+            museum.printRooms();
+            cout << endl;
         }
 
 
