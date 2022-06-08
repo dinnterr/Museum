@@ -9,8 +9,9 @@
 
 class Windows{
 public:
+    Windows();
     Windows (int numberOfWindows);
-    Windows (int numberOfWindows, std::vector <std::vector <double>>& windows);
+    //Windows (int numberOfWindows, std::vector <std::vector <double>>& windows);
 
     void setNumberOfWindows (int numberOfWindows) {m_numberOfWindows = numberOfWindows;}
     void setDimensions (std::vector <std::vector <double>> windows) {m_windows = std::move(windows);}

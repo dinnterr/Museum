@@ -9,13 +9,13 @@ Doorway::Doorway (int numberOfDoorways){
         m_doorways.resize(numberOfDoorways, std::vector<double>(DIMENSIONS));
         m_numberOfDoorways = numberOfDoorways;
         for (int i = 0; i < numberOfDoorways; i++) {
-            m_doorways[i][0] = 2100;
-            m_doorways[i][1] = 1000;
+            m_doorways[i][0] = 2.1;
+            m_doorways[i][1] = 1;
         }
     }
 }
 
-Doorway::Doorway(std::vector <std::vector <double>>& doorways, int numberOfDoorways){
+/*Doorway::Doorway(std::vector <std::vector <double>>& doorways, int numberOfDoorways){
     if (numberOfDoorways <= 0) {
         throw std::invalid_argument("Number of doorways cannot be negative or equal zero.");
     }
@@ -31,7 +31,7 @@ Doorway::Doorway(std::vector <std::vector <double>>& doorways, int numberOfDoorw
             }
         }
     }
-}
+}*/
 
 double Doorway::squareOfDoorways () const {
     int const N = m_numberOfDoorways;
@@ -56,11 +56,6 @@ double Doorway::squareOfDoorways () const {
 
 std::string Doorway::Info() const {
     std::stringstream ss;
-    ss << "Number of doorways: " << m_numberOfDoorways << ". Their parameters:\n";
-    for (int i = 0; i < m_numberOfDoorways; i++) {
-        for (int j = 0; j < DIMENSIONS; ) {
-           ss << ++i << "height: " << m_doorways[i][j] << ", width: " << m_doorways[i][++j] << '.' << std::endl;
-        }
-    }
+    ss << "Number of doorways: " << m_numberOfDoorways << " (each 2.1m * 1m)";
     return ss.str();
 }

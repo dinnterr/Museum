@@ -68,8 +68,6 @@ int main() {
         if (n == 1) { //Add room
            try {
                 cout << "You have chosen \"Add room\"." << endl << endl;
-                std::vector<Windows*> windows;
-                std::vector<Doorway*> doorways;
                 int number_of_doorways, number_of_windows;
                 double r_width, r_length, r_height;
                 cout << "Add number of doorways." << endl;
@@ -78,19 +76,15 @@ int main() {
                 cout << "Add number of windows." << endl;
                 cin >> number_of_windows;
                 cout << endl;
-                cout << "Enter width of room (in mm)." << endl;
+                cout << "Enter width of room (in m)." << endl;
                 cin >> r_width;
                 cout << endl;
-                cout << "Enter length of room (in mm)." << endl;
+                cout << "Enter length of room (in m)." << endl;
                 cin >> r_length;
                 cout << endl;
-                cout << "Enter height of room (in mm)." << endl;
+                cout << "Enter height of room (in m)." << endl;
                 cin >> r_height;
-                Windows w(number_of_windows);
-                windows.push_back(&w);
-                Doorway d(number_of_doorways);
-                doorways.push_back(&d);
-                room = new Room(r_width, r_length, r_height, windows, doorways);
+                room = new Room(r_width, r_length, r_height, number_of_windows, number_of_doorways);
                 museum.addRoom(room);
                 cout << endl;
             }
@@ -515,8 +509,7 @@ int main() {
                                 cout << "1. Usable item." << endl;
                                 cout << "2. Not usable item." << endl;
                                 cin >> possibilityOfUsing;
-                                exhibit = new HouseholdItem(name, country, year, h_width, h_length, h_height,
-                                                            possibilityOfUsing);
+                                exhibit = new HouseholdItem(name, country, year, h_width, h_length, h_height, possibilityOfUsing);
                                 museum.addExhibit(exhibit);
                                 cout << endl;
                                 break;
@@ -544,7 +537,11 @@ int main() {
 
 
 
-
+        if(n == 7){ //Print exhibits
+            cout << "Exhibits of your museum: " << endl;
+            museum.printExhibits();
+            cout << endl;
+        }
         if(n == 8){ //Print rooms
             cout << "Rooms of your museum: " << endl;
             museum.printRooms();

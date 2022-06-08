@@ -1,17 +1,17 @@
 #include "Room.h"
 
-Room::Room(double width, double length, double height, std::vector<Windows*>& window, std::vector<Doorway*>& doorway){
-    if (usableWallArea(window, doorway) <= 0)
+Room::Room(double width, double length, double height, int numberOfWindows, int numberOfDoorWays){
+    if (usableWallArea(numberOfWindows, numberOfDoorWays) <= 0)
     {
         throw std::invalid_argument ("Cannot create a room. It does not have usable area.");
     }
     m_width = width;
     m_length = length;
     m_height = height;
-    m_windows = window;
-    m_doorways = doorway;
+    m_windows = Windows(numberOfWindows);
+    m_doorways = Doorway(numberOfDoorWays);
     m_floorArea = width*length;
-    m_usableWallArea = usableWallArea(window, doorway);
+    m_usableWallArea = usableWallArea(numberOfWindows, numberOfDoorWays);
 }
 
 std::string Room::Info () const{
@@ -19,30 +19,17 @@ std::string Room::Info () const{
 
     ss << "You have created a room of size "
             << m_width << '*' << m_length << '*'
-            << m_height << "." << std::endl;
-    for (auto m_doorway : m_doorways){
-        m_doorway->Info();
-    }
+            << m_height << "." << "\n" << m_doorways.Info();
     return ss.str();
 }
 
-double Room::usableWallArea (std::vector<Windows*>& w, std::vector<Doorway*>& d) const{
+double Room::usableWallArea (int numberOfWindows, int numberOfDoorWays) const{
     double usableArea = m_length*m_height*2 + m_width*m_height*2;
-    for (auto const & window : w){
-        usableArea -= window->squareOfWindows();
-    }
-    for (auto const & doorway : d){
-        usableArea -= doorway->squareOfDoorways();
-    }
+    Windows w(numberOfWindows);
+    usableArea -= w.squareOfWindows();
+    Doorway d(numberOfDoorWays);
+    usableArea -= d.squareOfDoorways();
     return usableArea;
-}
-
-void Room::addWindow(Windows * window) {
-    m_windows.push_back(window);
-}
-
-void Room::addDoorway(Doorway * doorway) {
-    m_doorways.push_back(doorway);
 }
 
 void Room::setUsableWallArea(double newArea) {

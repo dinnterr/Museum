@@ -10,7 +10,10 @@ Museum::~Museum() {
 }
 
 void Museum::addRoom(Room *room) {
-    m_rooms.push_back(room);
+    auto it = std::find(m_rooms.begin(), m_rooms.end(), room);
+    if (it == m_rooms.end()) {
+        m_rooms.push_back(room);
+    }
 }
 
 void Museum::removeRoom(int pos) {
