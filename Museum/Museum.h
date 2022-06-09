@@ -22,7 +22,6 @@ public:
 
     void addRoom (Room* room);
     void removeRoom (int pos);
-    //void removeRoom (Room* room);
 
     void addExhibit (Exhibit* exhibit);
     void removeExhibitFromRoom (Exhibit* exhibit);
@@ -38,8 +37,8 @@ public:
     Exhibit* getExhibit (Exhibit* exhibit) const;
 
     bool isOnlyOneRoom () const;
+    bool isOneExhibitInRoom() const;
     bool isEmptyExhibits () const;
-    bool isOneExhibitInRoom () const;
     bool isEmptyRooms () const;
 
     int getRoomsAmount () const {return m_rooms.size();}

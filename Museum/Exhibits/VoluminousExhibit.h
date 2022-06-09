@@ -8,10 +8,6 @@ public:
     VoluminousExhibit(const std::string& author, const std::string& name, const std::string& country, int year, double width, double length, double height);
     VoluminousExhibit(const std::string& name, const std::string& country, int year, double width, double length, double height);
 
-    void setWidth (double width){m_width = width;}
-    void setLength (double length) {m_length = length;}
-    void setHeigth (double height){m_height = height;}
-
     std::string Info() const override;
 
     void place(Room* room) override;

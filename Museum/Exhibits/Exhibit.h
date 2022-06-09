@@ -16,10 +16,6 @@ public:
     virtual std::string getName () const {return m_name;}
     Room* getRoom () const {return m_room;}
 
-    void setAuthor (const std::string& author){m_author = author;}
-    void setCountry (const std::string& country){m_country = country;}
-    void setYear (int year){m_year = year;}
-
     virtual std::string Info() const;
 
     virtual void place(Room* room);

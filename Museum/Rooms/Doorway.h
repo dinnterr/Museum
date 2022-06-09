@@ -11,10 +11,7 @@
 
 class Doorway {
 public:
-    Doorway();
     Doorway (int numberOfDoorways);
-
-    void setNumberOfDoors (int numberOfDoorways) {m_numberOfDoorways= numberOfDoorways;}
 
     double squareOfDoorways () const;
 

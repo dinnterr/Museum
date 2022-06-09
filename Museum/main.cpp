@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <stdexcept>
 #include <exception>
 #include "Museum.h"
@@ -47,6 +46,14 @@ int main() {
         }
         if (n == 4 && museum.isEmptyExhibits()){
             cout << "You cannot place an exhibit. There are no exhibits in the museum. First add at least one." << endl << endl;
+            continue;
+        }
+        if (n == 4 && museum.isEmptyRooms()){
+            cout << "You cannot place an exhibit. There are no rooms in the museum. First add at least one." << endl << endl;
+            continue;
+        }
+        if (n == 5 && museum.isEmptyExhibits()){
+            cout << "There are no exhibits in museum. First place exhibits in rooms." << endl << endl;
             continue;
         }
         if (n == 5 && museum.isOneExhibitInRoom()){
@@ -100,7 +107,7 @@ int main() {
             cout << "Choose room that you want to delete (enter a number)." << endl;
             int d;
             cin >> d;
-            while (d < 0 || d > museum.getRoomsAmount()){
+            while (d <= 0 || d > museum.getRoomsAmount()){
                 cout << "Wrong number. Try again." << endl;
                 cin >> d;
             }
@@ -112,6 +119,7 @@ int main() {
         }
         if (n == 3) { //Add exhibit
             try {
+                cout << "You have chosen \"Add exhibit\"." << endl << endl;
                 cout << "Is the author known?" << endl;
                 cout << "1. Yes." << endl;
                 cout << "2. No." << endl;
@@ -125,12 +133,11 @@ int main() {
                 switch (n2) {
                     case 1: //With author
                     {
-                        cout << "You have chosen \"Add exhibit\"." << endl << endl;
                         cout << "Now select an exhibit type." << endl;
                         cout << "1. Simple exhibit (Author, name, country, year)." << endl;
                         cout << "2. Picture." << endl;
                         cout << "3. Voluminous exhibit (generalized)." << endl;
-                        cout << "4. Sculpture" << endl;
+                        cout << "4. Sculpture." << endl;
                         cout << "5. Technics." << endl;
                         cout << "6. Household item." << endl;
                         int n3;
@@ -145,7 +152,7 @@ int main() {
                             {
                                 string author, name, country;
                                 int year;
-                                cout << "Enter the name of the exhibit's author" << endl;
+                                cout << "Enter the name of the exhibit's author." << endl;
                                 cin >> author;
                                 cout << endl;
                                 cout << "Enter exhibit name." << endl;
@@ -167,7 +174,7 @@ int main() {
                                 string author, name, country;
                                 int year;
                                 double p_width, p_height;
-                                cout << "Enter the name of the artist" << endl;
+                                cout << "Enter the name of the artist." << endl;
                                 cin >> author;
                                 cout << endl;
                                 cout << "Enter picture name." << endl;
@@ -214,6 +221,7 @@ int main() {
                                 cout << endl;
                                 cout << "Enter the height of the voluminous exhibit." << endl;
                                 cin >> v_height;
+                                cout << endl;
                                 exhibit = new VoluminousExhibit(author, name, country, year, v_width, v_length,
                                                                 v_height);
                                 museum.addExhibit(exhibit);
@@ -254,6 +262,10 @@ int main() {
                                 cout << "5. Statue." << endl;
                                 cout << "6. Torso." << endl;
                                 cin >> type;
+                                while (type <= 0 || type > 6) {
+                                    cout << "Wrong number. Try again." << endl;
+                                    cin >> type;
+                                }
                                 exhibit = new Sculpture(author, name, country, year, s_width, s_length, s_height, type);
                                 museum.addExhibit(exhibit);
                                 cout << endl;
@@ -293,6 +305,10 @@ int main() {
                                 cout << "5. Alloy." << endl;
                                 cout << "6. Rubber." << endl;
                                 cin >> material;
+                                while (material <= 0 || material > 6) {
+                                    cout << "Wrong number. Try again." << endl;
+                                    cin >> material;
+                                }
                                 exhibit = new Technics(author, name, country, year, t_width, t_length, t_height,
                                                        material);
                                 museum.addExhibit(exhibit);
@@ -329,6 +345,10 @@ int main() {
                                 cout << "1. Usable item." << endl;
                                 cout << "2. Not usable item." << endl;
                                 cin >> possibilityOfUsing;
+                                while (possibilityOfUsing <= 0 || possibilityOfUsing > 2) {
+                                    cout << "Wrong number. Try again." << endl;
+                                    cin >> possibilityOfUsing;
+                                }
                                 exhibit = new HouseholdItem(author, name, country, year, h_width, h_length, h_height, possibilityOfUsing);
                                 museum.addExhibit(exhibit);
                                 cout << endl;
@@ -339,12 +359,11 @@ int main() {
                     }
                     case 2: //Unknown author
                     {
-                        cout << "You have chosen \"Add exhibit\"." << endl << endl;
                         cout << "Now select an exhibit type." << endl;
                         cout << "1. Simple exhibit (Name, country, year)." << endl;
                         cout << "2. Picture." << endl;
                         cout << "3. Voluminous exhibit (generalized)." << endl;
-                        cout << "4. Sculpture" << endl;
+                        cout << "4. Sculpture." << endl;
                         cout << "5. Technics." << endl;
                         cout << "6. Household item." << endl;
                         int n3;
@@ -416,6 +435,7 @@ int main() {
                                 cout << endl;
                                 cout << "Enter the length of the voluminous exhibit." << endl;
                                 cin >> v_length;
+                                cout << endl;
                                 cout << "Enter the height of the voluminous exhibit." << endl;
                                 cin >> v_height;
                                 cout << endl;
@@ -455,6 +475,10 @@ int main() {
                                 cout << "5. Statue." << endl;
                                 cout << "6. Torso." << endl;
                                 cin >> type;
+                                while (type <= 0 || type > 6) {
+                                    cout << "Wrong number. Try again." << endl;
+                                    cin >> type;
+                                }
                                 exhibit = new Sculpture(name, country, year, s_width, s_length, s_height, type);
                                 museum.addExhibit(exhibit);
                                 cout << endl;
@@ -491,6 +515,10 @@ int main() {
                                 cout << "5. Alloy." << endl;
                                 cout << "6. Rubber." << endl;
                                 cin >> material;
+                                while (material <= 0 || material > 6) {
+                                    cout << "Wrong number. Try again." << endl;
+                                    cin >> material;
+                                }
                                 exhibit = new Technics(name, country, year, t_width, t_length, t_height, material);
                                 museum.addExhibit(exhibit);
                                 cout << endl;
@@ -523,6 +551,10 @@ int main() {
                                 cout << "1. Usable item." << endl;
                                 cout << "2. Not usable item." << endl;
                                 cin >> possibilityOfUsing;
+                                while (possibilityOfUsing <= 0 || possibilityOfUsing > 2) {
+                                    cout << "Wrong number. Try again." << endl;
+                                    cin >> possibilityOfUsing;
+                                }
                                 exhibit = new HouseholdItem(name, country, year, h_width, h_length, h_height, possibilityOfUsing);
                                 museum.addExhibit(exhibit);
                                 cout << endl;
@@ -541,10 +573,11 @@ int main() {
             cout << "You have chosen \"Place tne exhibit in the room\"." << endl << endl;
             cout << "Your museum has such exhibits:" << endl << endl;
             museum.printExhibits();
+            cout << endl;
             cout << "Now select the exhibit you want to place (enter number)." << endl;
             int p;
             cin >> p;
-            while (p < 0 || p > museum.getExhibitsAmount()){
+            while (p <= 0 || p > museum.getExhibitsAmount()){
                 cout << "Wrong number. Try again." << endl;
                 cin >> p;
             }
@@ -554,9 +587,9 @@ int main() {
             cout << "Now select the room in which you want to place exhibit." << endl;
             int p2;
             cin >> p2;
-            while (p2 < 0 || p2 > museum.getRoomsAmount()){
+            while (p2 <= 0 || p2 > museum.getRoomsAmount()){
                 cout << "Wrong number. Try again." << endl;
-                cin >> p;
+                cin >> p2;
             }
             try {
                 museum.placeExhibit(museum.getExhibit(p), museum.getRoom(p2));
@@ -574,14 +607,12 @@ int main() {
             cout << "Make your choice (enter number)." << endl;
             int r;
             cin >> r;
-            while (r < 0 || r > museum.getExhibitsAmount()){
+            while (r <= 0 || r > museum.getExhibitsAmount()){
                 cout << "Wrong number. Try again." << endl;
                 cin >> r;
             }
             museum.removeExhibitFromRoom(museum.getExhibit(r));
             cout << endl;
-
-
         }
         if (n == 6){ //Remove exhibit from museum
             cout << "You have chosen \"Remove exhibit from museum\"." << endl << endl;
@@ -591,15 +622,12 @@ int main() {
             cout << "Make your choice (enter number)." << endl;
             int r;
             cin >> r;
-            while (r < 0 || r > museum.getExhibitsAmount()){
+            while (r <= 0 || r > museum.getExhibitsAmount()){
                 cout << "Wrong number. Try again." << endl;
                 cin >> r;
             }
             museum.deleteExhibitFromMuseum(museum.getExhibit(r));
             cout << endl;
-
-
-
         }
         if(n == 7){ //Print exhibits
             cout << "Exhibits of your museum: " << endl;

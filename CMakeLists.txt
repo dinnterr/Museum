@@ -9,4 +9,4 @@ add_executable(museum Museum/main.cpp Museum/Rooms/Room.cpp
         Museum/Exhibits/VoluminousExhibit.h Museum/Exhibits/Sculpture.cpp Museum/Exhibits/Sculpture.h
         Museum/Exhibits/Technics.cpp Museum/Exhibits/Technics.h Museum/Exhibits/HouseholdItem.cpp
         Museum/Exhibits/HouseholdItem.h Museum/Rooms/Windows.cpp Museum/Rooms/Windows.h
-        Museum/Rooms/Doorway.cpp Museum/Rooms/Doorway.h "Museum/Rooms/Constants.h" Museum/Museum.cpp Museum/Museum.h)
+        Museum/Rooms/Doorway.cpp Museum/Rooms/Doorway.h Museum/Museum.cpp Museum/Museum.h)

@@ -26,6 +26,7 @@ void Picture::place(Room *room) {
         double area = (room->getUsableWallArea() - m_height*m_width);
         room->setUsableWallArea(area);
     }
-    else
+    else {
         throw std::invalid_argument("Cannot place in the room. Picture is too big.");
+    }
 }

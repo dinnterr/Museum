@@ -1,5 +1,4 @@
 #include "Doorway.h"
-#include "Constants.h"
 
 Doorway::Doorway (int numberOfDoorways) : m_numberOfDoorways(numberOfDoorways) {
     if (numberOfDoorways <= 0) {

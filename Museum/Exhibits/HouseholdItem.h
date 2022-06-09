@@ -3,17 +3,13 @@
 
 #include "VoluminousExhibit.h"
 
-enum Possibility{
-    usable,
-    notUsable
-};
-
 class HouseholdItem : public  VoluminousExhibit{
 public:
     HouseholdItem(const std::string& author, const std::string& name, const std::string& country, int year, double width, double length,
                   double height, int possibilityOfUsing);
     HouseholdItem(const std::string& name, const std::string& country, int year, double width, double length,
                   double height, int possibilityOfUsing);
+
     std::string Info() const override;
 
     void place(Room* room) override;

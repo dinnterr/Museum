@@ -1,5 +1,4 @@
 #include "Windows.h"
-#include "Constants.h"
 
 Windows::Windows (int numberOfWindows) : m_numberOfWindows(numberOfWindows){
     if (numberOfWindows < 0) {

@@ -3,15 +3,6 @@
 
 #include "VoluminousExhibit.h"
 
-enum Type{
-    bust = 1,
-    sculptureOfSmallForms,
-    sculpturalGroup,
-    statuette,
-    statue,
-    torso
-};
-
 class Sculpture : public  VoluminousExhibit {
 public:
     Sculpture(const std::string& author, const std::string& name, const std::string& country, int year, double width, double length,

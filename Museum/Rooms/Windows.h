@@ -11,10 +11,7 @@
 
 class Windows{
 public:
-    Windows();
     Windows (int numberOfWindows);
-
-    void setNumberOfWindows (int numberOfWindows) {m_numberOfWindows = numberOfWindows;}
 
     double squareOfWindows () const;
 

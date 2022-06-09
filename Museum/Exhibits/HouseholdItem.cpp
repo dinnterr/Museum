@@ -2,31 +2,21 @@
 
 HouseholdItem::HouseholdItem(const std::string& author, const std::string& name, const std::string& country, int year, double width, double length, double height, int possibilityOfUsing):
         VoluminousExhibit(author, name, country, year, width, length, height){
-    if(possibilityOfUsing < 0 || possibilityOfUsing > 1){
-        throw std::invalid_argument("Wrong number.");
+    if(possibilityOfUsing == 1){
+        m_possibilityOfUsing = "Usable item.";
     }
-    switch (possibilityOfUsing) {
-        case usable: {
-            m_possibilityOfUsing = "Usable item.";
-        }
-        case notUsable:{
-            m_possibilityOfUsing = "Not usable item.";
-        }
+    if(possibilityOfUsing == 2){
+        m_possibilityOfUsing = "Not usable item.";
     }
 }
 
 HouseholdItem::HouseholdItem(const std::string& name, const std::string& country, int year, double width, double length, double height, int possibilityOfUsing):
         VoluminousExhibit(name, country, year, width, length, height){
-    if(possibilityOfUsing < 0 || possibilityOfUsing > 1){
-        throw std::invalid_argument("Wrong number.");
+    if(possibilityOfUsing == 1){
+        m_possibilityOfUsing = "Usable item.";
     }
-    switch (possibilityOfUsing) {
-        case usable: {
-            m_possibilityOfUsing = "Usable item.";
-        }
-        case notUsable:{
-            m_possibilityOfUsing = "Not usable item.";
-        }
+    if(possibilityOfUsing == 2){
+        m_possibilityOfUsing = "Not usable item.";
     }
 }
 
