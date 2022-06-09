@@ -13,10 +13,10 @@ VoluminousExhibit (author, name, country, year, width, length, height){
         m_type = "Sculptural group.";
     }
     if(type == 4){
-        m_type = "Bust.";
+        m_type = "Statuette.";
     }
     if(type == 5){
-        m_type = "Statuette.";
+        m_type = "Statue.";
     }
     if(type == 6){
         m_type = "Torso.";
@@ -36,10 +36,10 @@ Sculpture::Sculpture(const std::string& name, const std::string& country, int ye
         m_type = "Sculptural group.";
     }
     if(type == 4){
-        m_type = "Bust.";
+        m_type = "Statuette.";
     }
     if(type == 5){
-        m_type = "Statuette.";
+        m_type = "Statue.";
     }
     if(type == 6){
         m_type = "Torso.";
