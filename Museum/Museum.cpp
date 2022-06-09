@@ -32,8 +32,11 @@ void Museum::addExhibit(Exhibit *exhibit) {
 }
 
 void Museum::removeExhibitFromRoom(Exhibit *exhibit) {
-    Room *p = nullptr;
-    exhibit->place(p);
+    if (exhibit->getRoom() != nullptr) {
+        exhibit->place(nullptr);
+    }
+    else
+        throw std::invalid_argument("This exhibit is not in the room. Choose another one or add such another one.");
 }
 
 void Museum::deleteExhibitFromMuseum(Exhibit* exhibit) {
@@ -71,44 +74,12 @@ Exhibit * Museum::getExhibit(int pos) const {
     return m_exhibits[pos-1];
 }
 
-Exhibit *Museum::getExhibit(const std::string &name) const {
-    auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(), [name](Exhibit* exhibit) { return (exhibit->getName() == name); });
-    if (it != m_exhibits.end())
-    {
-        return *it;
-    }
-    else
-        return nullptr;
-}
-
-Exhibit *Museum::getExhibit(Exhibit *exhibit) const {
-    auto it = std::find_if(m_exhibits.begin(), m_exhibits.end(), [exhibit](Exhibit* ex) { return (ex->getName() == exhibit->getName()); });
-    if (it != m_exhibits.end())
-    {
-        return *it;
-    }
-    else
-    {
-        return nullptr;
-    }
-}
-
 bool Museum::isOnlyOneRoom() const {
     return m_rooms.size() == 1;
 }
 
 bool Museum::isEmptyExhibits() const {
     return  m_exhibits.empty();
-}
-
-bool Museum::isOneExhibitInRoom() const {
-    for ( auto ex : m_exhibits){
-        if (ex->getRoom() == nullptr) {
-            return true;
-        }
-        else
-            return false;
-    }
 }
 
 bool Museum::isEmptyRooms() const {

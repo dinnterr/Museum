@@ -23,7 +23,10 @@ std::string VoluminousExhibit::Info() const {
 }
 
 void VoluminousExhibit::place(Room *room) {
-    if(m_width*m_length <= room->getUsableFloorArea() && m_height < room->getHeight()) {
+    if (room == nullptr){
+        Exhibit::place(room);
+    }
+    else if(m_width*m_length <= room->getUsableFloorArea() && m_height < room->getHeight()) {
         Exhibit::place(room);
         double area = (room->getUsableFloorArea() - m_width*m_length);
         room->setFloorArea(area);

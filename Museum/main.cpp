@@ -53,11 +53,11 @@ int main() {
             continue;
         }
         if (n == 5 && museum.isEmptyExhibits()){
-            cout << "There are no exhibits in museum. First place exhibits in rooms." << endl << endl;
+            cout << "There are no exhibits in museum. First add at least one." << endl << endl;
             continue;
         }
-        if (n == 5 && museum.isOneExhibitInRoom()){
-            cout << "There are no exhibits in rooms. First place exhibits in rooms." << endl << endl;
+        if (n == 5 && museum.isEmptyRooms()){
+            cout << "There are no rooms in the museum." << endl << endl;
             continue;
         }
         if (n == 6 && museum.isEmptyExhibits()){
@@ -611,7 +611,12 @@ int main() {
                 cout << "Wrong number. Try again." << endl;
                 cin >> r;
             }
-            museum.removeExhibitFromRoom(museum.getExhibit(r));
+            try {
+                museum.removeExhibitFromRoom(museum.getExhibit(r));
+            }
+            catch (const exception& ex){
+                cerr << ex.what() << endl;
+            }
             cout << endl;
         }
         if (n == 6){ //Remove exhibit from museum

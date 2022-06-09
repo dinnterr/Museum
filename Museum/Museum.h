@@ -33,11 +33,8 @@ public:
 
     Room* getRoom (int pos) const;
     Exhibit* getExhibit (int pos) const;
-    Exhibit* getExhibit (const std::string& name) const;
-    Exhibit* getExhibit (Exhibit* exhibit) const;
 
     bool isOnlyOneRoom () const;
-    bool isOneExhibitInRoom() const;
     bool isEmptyExhibits () const;
     bool isEmptyRooms () const;
 

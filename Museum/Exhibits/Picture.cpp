@@ -21,7 +21,10 @@ std::string Picture::Info() const{
 }
 
 void Picture::place(Room *room) {
-    if(m_height*m_width <= room->getUsableWallArea()) {
+    if (room == nullptr){
+        Exhibit::place(room);
+    }
+    else if(m_height*m_width <= room->getUsableWallArea()) {
         Exhibit::place(room);
         double area = (room->getUsableWallArea() - m_height*m_width);
         room->setUsableWallArea(area);
