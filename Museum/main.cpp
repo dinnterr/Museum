@@ -119,7 +119,7 @@ int main() {
         }
         if (n == 3) { //Add exhibit
             try {
-                cout << "You have chosen \"Add exhibit\"." << endl << endl;
+                cout << "You have chosen \"Add exhibit\" (all parameters (if any) enter in meters)." << endl << endl;
                 cout << "Is the author known?" << endl;
                 cout << "1. Yes." << endl;
                 cout << "2. No." << endl;
