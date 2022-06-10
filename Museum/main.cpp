@@ -153,6 +153,7 @@ int main() {
                                 string author, name, country;
                                 int year;
                                 cout << "Enter the name of the exhibit's author." << endl;
+                                cin >> ws;
                                 getline(cin, author);
                                 cout << endl;
                                 cout << "Enter exhibit name." << endl;
@@ -175,6 +176,7 @@ int main() {
                                 int year;
                                 double p_width, p_height;
                                 cout << "Enter the name of the artist." << endl;
+                                cin >> ws;
                                 getline (cin, author);
                                 cout << endl;
                                 cout << "Enter picture name." << endl;
@@ -202,6 +204,7 @@ int main() {
                                 int year;
                                 double v_width, v_height, v_length;
                                 cout << "Enter the name of the voluminous exhibit's author." << endl;
+                                cin >> ws;
                                 getline (cin, author);
                                 cout << endl;
                                 cout << "Enter voluminous exhibit name." << endl;
@@ -234,6 +237,7 @@ int main() {
                                 int year, type;
                                 double s_width, s_height, s_length;
                                 cout << "Enter the name of the sculpture's author." << endl;
+                                cin >> ws;
                                 getline (cin, author);
                                 cout << endl;
                                 cout << "Enter sculpture name." << endl;
@@ -277,6 +281,7 @@ int main() {
                                 int year, material;
                                 double t_width, t_height, t_length;
                                 cout << "Enter the name of the technic's author." << endl;
+                                cin >> ws;
                                 getline (cin, author);
                                 cout << endl;
                                 cout << "Enter technic name." << endl;
@@ -321,6 +326,7 @@ int main() {
                                 int year, possibilityOfUsing;
                                 double h_width, h_height, h_length;
                                 cout << "Enter the name of the household item's author." << endl;
+                                cin >> ws;
                                 getline (cin, author);
                                 cout << endl;
                                 cout << "Enter household item name." << endl;
@@ -379,6 +385,7 @@ int main() {
                                 string name, country;
                                 int year;
                                 cout << "Enter exhibit name." << endl;
+                                cin >> ws;
                                 getline (cin, name);
                                 cout << endl;
                                 cout << "Indicate the country of origin of the exhibit." << endl;
@@ -398,6 +405,7 @@ int main() {
                                 int year;
                                 double p_width, p_height;
                                 cout << "Enter picture name." << endl;
+                                cin >> ws;
                                 getline (cin, name);
                                 cout << endl;
                                 cout << "Indicate the country of origin of the picture." << endl;
@@ -422,6 +430,7 @@ int main() {
                                 int year;
                                 double v_width, v_height, v_length;
                                 cout << "Enter voluminous exhibit name." << endl;
+                                cin >> ws;
                                 getline (cin, name);
                                 cout << endl;
                                 cout << "Indicate the country of origin of the voluminous exhibit." << endl;
@@ -450,6 +459,7 @@ int main() {
                                 int year, type;
                                 double s_width, s_height, s_length;
                                 cout << "Enter sculpture name." << endl;
+                                cin >> ws;
                                 getline (cin, name);
                                 cout << endl;
                                 cout << "Indicate the country of origin of the sculpture." << endl;
@@ -490,6 +500,7 @@ int main() {
                                 int year, material;
                                 double t_width, t_height, t_length;
                                 cout << "Enter technic name." << endl;
+                                cin >> ws;
                                 getline (cin, name);
                                 cout << endl;
                                 cout << "Indicate the country of origin of the technic." << endl;
@@ -530,6 +541,7 @@ int main() {
                                 int year, possibilityOfUsing;
                                 double h_width, h_height, h_length;
                                 cout << "Enter household item name." << endl;
+                                cin >> ws;
                                 getline (cin, name);
                                 cout << endl;
                                 cout << "Indicate the country of origin of the household item." << endl;
