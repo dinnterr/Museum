@@ -20,7 +20,7 @@ int main() {
     cout << "Press Enter to start!" << endl;
     cin.get();
     for (;;) {
-        cout << "Now make your choice what do you want to do:" << endl;
+        cout << "Now make your choice what do you want to do (enter number):" << endl;
         cout << "1. Add room." << endl;
         cout << "2. Remove room." << endl;
         cout << "3. Add exhibit." << endl;
