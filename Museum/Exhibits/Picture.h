@@ -10,7 +10,10 @@ public:
 
     std::string Info() const override;
 
+    double area() const;
+
     void place(Room* room) override;
+    void removeFromRoom (Room* room) override;
 
 private:
     double m_width, m_height;

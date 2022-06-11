@@ -12,6 +12,7 @@ public:
     std::string Info() const override;
 
     void place(Room* room) override;
+    void removeFromRoom (Room* room) override;
 
 private:
     std::string m_type;

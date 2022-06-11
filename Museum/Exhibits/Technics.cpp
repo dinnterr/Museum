@@ -56,3 +56,7 @@ std::string Technics::Info() const{
 void Technics::place(Room *room) {
     VoluminousExhibit::place(room);
 }
+
+void Technics::removeFromRoom(Room *room) {
+    VoluminousExhibit::removeFromRoom(room);
+}

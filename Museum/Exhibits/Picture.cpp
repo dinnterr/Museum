@@ -20,16 +20,20 @@ std::string Picture::Info() const{
     return ss.str();
 }
 
+double Picture::area() const {
+    return m_height*m_width;
+}
+
 void Picture::place(Room *room) {
     if (room == nullptr){
         Exhibit::place(room);
     }
-    else if(m_height*m_width <= room->getUsableWallArea()) {
+    else if(room->canPlacePicture(this)) {
         Exhibit::place(room);
-        double area = (room->getUsableWallArea() - m_height*m_width);
-        room->setUsableWallArea(area);
     }
-    else {
-        throw std::invalid_argument("Cannot place in the room. Picture is too big.");
-    }
+}
+
+void Picture::removeFromRoom(Room * room) {
+    Exhibit::removeFromRoom(room);
+    room->removePicture(this);
 }

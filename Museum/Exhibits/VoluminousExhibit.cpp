@@ -22,16 +22,21 @@ std::string VoluminousExhibit::Info() const {
     return ss.str();
 }
 
+double VoluminousExhibit::area() const {
+    return m_width*m_length;
+}
+
 void VoluminousExhibit::place(Room *room) {
     if (room == nullptr){
         Exhibit::place(room);
     }
-    else if(m_width*m_length <= room->getUsableFloorArea() && m_height < room->getHeight()) {
+    else if(room->canPlaceVoluminousExhibit(this)) {
         Exhibit::place(room);
-        double area = (room->getUsableFloorArea() - m_width*m_length);
-        room->setFloorArea(area);
     }
-    else
-        throw std::invalid_argument("Cannot place in the room. Voluminous exhibit is too big.");
+}
+
+void VoluminousExhibit::removeFromRoom(Room *room) {
+    Exhibit::removeFromRoom(room);
+    room->removeVoluminousExhibit(this);
 }
 

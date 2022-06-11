@@ -1,19 +1,16 @@
 #include "Museum.h"
 
 Museum::~Museum() {
-    for (auto room: m_rooms){
-        delete room;
-    }
     for (auto exhibit: m_exhibits){
         delete exhibit;
+    }
+    for (auto room: m_rooms){
+        delete room;
     }
 }
 
 void Museum::addRoom(Room *room) {
-    auto it = std::find(m_rooms.begin(), m_rooms.end(), room);
-    if (it == m_rooms.end()) {
-        m_rooms.push_back(room);
-    }
+   m_rooms.push_back(room);
 }
 
 void Museum::removeRoom(int pos) {
@@ -32,14 +29,11 @@ void Museum::addExhibit(Exhibit *exhibit) {
 }
 
 void Museum::removeExhibitFromRoom(Exhibit *exhibit) {
-    if (exhibit->getRoom() != nullptr) {
-        exhibit->place(nullptr);
-    }
-    else
-        throw std::invalid_argument("This exhibit is not in the room. Choose another one or add such another one.");
+    exhibit->removeFromRoom(exhibit->getRoom());
 }
 
 void Museum::deleteExhibitFromMuseum(Exhibit* exhibit) {
+    removeExhibitFromRoom(exhibit);
     auto it = std::find(m_exhibits.begin(), m_exhibits.end(), exhibit);
     if (it != m_exhibits.end()) {
         m_exhibits.erase(it);

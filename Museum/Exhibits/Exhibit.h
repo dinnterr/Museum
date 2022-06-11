@@ -13,12 +13,12 @@ public:
     Exhibit(const std::string& author, const std::string& name, const std::string& country, int year);
     Exhibit(const std::string& name, const std::string& country, int year);
 
-    virtual std::string getName () const {return m_name;}
     Room* getRoom () const {return m_room;}
 
     virtual std::string Info() const;
 
     virtual void place(Room* room);
+    virtual void removeFromRoom (Room * room);
 
 private:
     std::string m_author = "Unknown";

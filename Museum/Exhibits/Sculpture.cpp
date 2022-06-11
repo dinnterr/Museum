@@ -55,3 +55,7 @@ std::string Sculpture::Info() const{
 void Sculpture::place(Room *room) {
     VoluminousExhibit::place(room);
 }
+
+void Sculpture::removeFromRoom(Room *room) {
+    VoluminousExhibit::removeFromRoom(room);
+}

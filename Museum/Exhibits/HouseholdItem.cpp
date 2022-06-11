@@ -30,3 +30,7 @@ std::string HouseholdItem::Info() const{
 void HouseholdItem::place(Room *room) {
     VoluminousExhibit::place(room);
 }
+
+void HouseholdItem::removeFromRoom(Room *room) {
+    VoluminousExhibit::removeFromRoom(room);
+}

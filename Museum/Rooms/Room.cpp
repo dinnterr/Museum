@@ -34,12 +34,26 @@ double Room::usableFloorArea() const {
     return m_width*m_length;
 }
 
-void Room::setUsableWallArea(double newArea) {
-    m_usableWallArea = newArea;
+void Room::canPlacePicture(Picture* p) {
+    if (p->area() <= m_usableWallArea){
+        m_usableWallArea -= p->area();
+    }
+    else
+        throw std::invalid_argument("Cannot place in the room. Picture is too big.");
 }
 
-void Room::setFloorArea(double newArea) {
-    m_usableFloorArea = newArea;
+void Room::canPlaceVoluminousExhibit(VoluminousExhibit *v) {
+    if (v->area() <= m_usableFloorArea && v->getHeight() < m_height){
+        m_usableFloorArea -= v->area();
+    }
+    else
+        throw std::invalid_argument("Cannot place in the room. Voluminous exhibit is too big.");
 }
 
+void Room::removePicture(Picture *p) {
+    m_usableWallArea += p->area();
+}
 
+void Room::removeVoluminousExhibit(VoluminousExhibit *v) {
+    m_usableFloorArea += v->area();
+}

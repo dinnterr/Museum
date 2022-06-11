@@ -14,8 +14,8 @@ using namespace std;
 
 int main() {
     Museum museum;
-    Room* room = nullptr;
-    Exhibit* exhibit = nullptr;
+    Room * room = nullptr;
+    Exhibit * exhibit = nullptr;
     cout << "Hello! You are using a museum creation program." << endl << endl;
     cout << "Press Enter to start!" << endl;
     cin.get();
@@ -677,8 +677,8 @@ int main() {
                 cin >> e2;
             }
             if(e2 == 1){
-                room = nullptr;
-                exhibit = nullptr;
+                delete exhibit;
+                delete room;
                 return  0;
             }
             if (e2 == 2){
