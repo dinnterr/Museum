@@ -59,3 +59,7 @@ void Sculpture::place(Room *room) {
 void Sculpture::removeFromRoom(Room *room) {
     VoluminousExhibit::removeFromRoom(room);
 }
+
+Sculpture::~Sculpture() {
+    VoluminousExhibit::~VoluminousExhibit();
+}

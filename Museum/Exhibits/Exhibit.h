@@ -17,8 +17,10 @@ public:
 
     virtual std::string Info() const;
 
-    virtual void place(Room* room);
+    virtual void place(Room * room);
     virtual void removeFromRoom (Room * room);
+
+    virtual ~Exhibit();
 
 private:
     std::string m_author = "Unknown";

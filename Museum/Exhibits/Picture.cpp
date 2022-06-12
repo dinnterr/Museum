@@ -28,12 +28,23 @@ void Picture::place(Room *room) {
     if (room == nullptr){
         Exhibit::place(room);
     }
-    else if(room->canPlacePicture(this)) {
+    else if(area() <= room->getUsableWallArea()) {
         Exhibit::place(room);
+        double newArea = room->getUsableWallArea() - area();
+        room->setUsableWallArea(newArea);
     }
+    else
+        throw std::invalid_argument("Cannot place in the room. Picture is too big.");
 }
 
 void Picture::removeFromRoom(Room * room) {
     Exhibit::removeFromRoom(room);
-    room->removePicture(this);
+    double newArea = room->getUsableWallArea() + area();
+    room->setUsableWallArea(newArea);
 }
+
+Picture::~Picture() {
+    Exhibit::~Exhibit();
+}
+
+

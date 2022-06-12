@@ -34,3 +34,7 @@ void HouseholdItem::place(Room *room) {
 void HouseholdItem::removeFromRoom(Room *room) {
     VoluminousExhibit::removeFromRoom(room);
 }
+
+HouseholdItem::~HouseholdItem() {
+    VoluminousExhibit::~VoluminousExhibit();
+}

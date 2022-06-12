@@ -30,13 +30,22 @@ void VoluminousExhibit::place(Room *room) {
     if (room == nullptr){
         Exhibit::place(room);
     }
-    else if(room->canPlaceVoluminousExhibit(this)) {
+    else if(area() <= room->getUsableFloorArea() && m_height < room->getHeight()) {
         Exhibit::place(room);
+        double newArea = room->getUsableFloorArea() - area();
+        room->setUsableFloorArea(newArea);
     }
+    else
+        throw std::invalid_argument("Cannot place in the room. Voluminous exhibit is too big.");
 }
 
 void VoluminousExhibit::removeFromRoom(Room *room) {
     Exhibit::removeFromRoom(room);
-    room->removeVoluminousExhibit(this);
+    double newArea = room->getUsableFloorArea() + area();
+    room->setUsableFloorArea(newArea);
+}
+
+VoluminousExhibit::~VoluminousExhibit() {
+    Exhibit::~Exhibit();
 }
 

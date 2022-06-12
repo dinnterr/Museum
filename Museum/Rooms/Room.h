@@ -9,8 +9,8 @@
 #include <vector>
 #include "Windows.h"
 #include "Doorway.h"
-#include "../Exhibits/Picture.h"
-#include "../Exhibits/VoluminousExhibit.h"
+//#include "../Exhibits/Picture.h"
+//#include "../Exhibits/VoluminousExhibit.h"
 
 class Room{
 public:
@@ -20,13 +20,15 @@ public:
     double usableWallArea (int numberOfWindows, int numberOfDoorWays) const;
     double usableFloorArea () const;
 
+    double getUsableWallArea () const {return m_usableWallArea;}
+    double getUsableFloorArea () const {return m_usableFloorArea;}
+    double getHeight () const {return m_height;}
+
+    void setUsableWallArea (double newArea);
+    void setUsableFloorArea (double newArea);
+
     std::string Info () const;
 
-    void canPlacePicture(Picture* p);
-    void canPlaceVoluminousExhibit (VoluminousExhibit* v);
-
-    void removePicture (Picture* p);
-    void removeVoluminousExhibit (VoluminousExhibit* v);
 
 private:
     double m_width, m_length, m_height;

@@ -15,6 +15,8 @@ public:
     void place(Room* room) override;
     void removeFromRoom (Room* room) override;
 
+    ~HouseholdItem();
+
 private:
     std::string m_possibilityOfUsing;
 };

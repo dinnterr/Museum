@@ -43,3 +43,7 @@ void Exhibit::removeFromRoom(Room * room) {
     else if (m_room == room)
         m_room = nullptr;
 }
+
+Exhibit::~Exhibit() {
+    delete m_room;
+}

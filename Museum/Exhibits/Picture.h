@@ -15,6 +15,8 @@ public:
     void place(Room* room) override;
     void removeFromRoom (Room* room) override;
 
+    ~Picture();
+
 private:
     double m_width, m_height;
 };

@@ -13,8 +13,10 @@ public:
     double getHeight () const {return m_height;}
     double area() const;
 
-    void place(Room* room) override
+    void place(Room* room) override;
     void removeFromRoom (Room* room) override;
+
+    ~VoluminousExhibit();
 
 private:
     double m_width, m_length, m_height;

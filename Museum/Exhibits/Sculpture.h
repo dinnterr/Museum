@@ -14,6 +14,8 @@ public:
     void place(Room* room) override;
     void removeFromRoom (Room* room) override;
 
+    ~Sculpture();
+
 private:
     std::string m_type;
 };

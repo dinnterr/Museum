@@ -60,3 +60,7 @@ void Technics::place(Room *room) {
 void Technics::removeFromRoom(Room *room) {
     VoluminousExhibit::removeFromRoom(room);
 }
+
+Technics::~Technics() {
+    VoluminousExhibit::~VoluminousExhibit();
+}
