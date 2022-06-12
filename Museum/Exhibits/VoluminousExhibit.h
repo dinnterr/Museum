@@ -10,7 +10,6 @@ public:
 
     std::string Info() const override;
 
-    double getHeight () const {return m_height;}
     double area() const;
 
     void place(Room* room) override;
