@@ -29,7 +29,6 @@ public:
 
     std::string Info () const;
 
-
 private:
     double m_width, m_length, m_height;
     Windows m_windows;
