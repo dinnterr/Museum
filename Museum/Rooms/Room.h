@@ -9,8 +9,6 @@
 #include <vector>
 #include "Windows.h"
 #include "Doorway.h"
-//#include "../Exhibits/Picture.h"
-//#include "../Exhibits/VoluminousExhibit.h"
 
 class Room{
 public:
